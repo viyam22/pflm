@@ -1,0 +1,90 @@
+html,
+body {
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+.navbar {
+  height: 82px;
+  margin-bottom: 0;
+  border-bottom: solid 1px #ededed;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.navbar .container {
+  padding-left: 14px;
+}
+.navbar .navbar-collapse {
+  float: right;
+}
+.navbar .navbar-collapse ul {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.navbar .navbar-toggle {
+  border-color: transparent !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.navbar .navbar-toggle:focus,
+.navbar .navbar-toggle:hover {
+  background-color: transparent !important;
+}
+.navbar-nav li > a {
+  font-size: 16px;
+  outline: none;
+  text-decoration: none;
+  padding: 20px 17px;
+}
+.navbar-nav li > a:hover:before {
+  background-color: transparent;
+  outline: none;
+  text-decoration: none;
+}
+.navbar-nav li > a:hover:after,
+.navbar-nav li > a:focus:after,
+.navbar-nav li > a:active:after {
+  display: block;
+  content: '';
+  width: 8px;
+  height: 8px;
+  margin: 0 auto;
+  margin-top: 6px;
+  background-color: #ea094b !important;
+  outline: none;
+  text-decoration: none;
+}
+.navbar-nav li :hover,
+.navbar-nav li :focus,
+.navbar-nav li :active {
+  color: #ea094b !important;
+  background-color: transparent !important;
+}
+.navbar-brand {
+  height: 70px;
+}
+.navbar-brand img {
+  height: 40px;
+}
+.navbar-brand img {
+  height: 40px;
+}
+@media (max-width: 768px) {
+  .navbar {
+    height: 54px;
+  }
+  .navbar .navbar-collapse ul {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .navbar-brand {
+    padding-top: 8px;
+    height: 36px;
+  }
+  .navbar-brand img {
+    height: 36px;
+  }
+}
