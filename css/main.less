@@ -71,14 +71,68 @@ li {
 }
 
 .navbar-brand {
-  height: 70px;
+  height: 82px;
+  padding: 11px 15px;
   img {
-    height: 40px;
+    height: 60px;
   }
 }
 
 .navbar-brand img {
-  height: 40px;
+  height: 60px;
+}
+
+//顶部 大屏幕 banner
+.jumbotron{
+  position: relative;
+  background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+  //background-size: contain;
+  background-repeat: no-repeat;
+  //background-position: center 0;
+  background-position: center 0;
+  background-color: red;
+  //padding: 82px 0 0;
+  //padding: 390px 0 0;
+  margin: 0;
+  padding-top: 309px;
+  padding-bottom: 190px;
+  .container{
+    min-height: 190px;
+  }
+}
+.jumbotron-txt h1{
+  margin-bottom: 30px;
+  border: 0;
+  color: white;
+  font-size: 48px;
+  font-family:"Microsoft YaHei";
+  line-height: 70px;
+}
+.jumbotron-txt h2{
+  width: 20px;
+  height: 20px;
+  background-color: #ea094b;
+}
+.jumbotron-gif{
+  display: none;
+}
+
+
+@media (max-width: 1199px) {
+  .jumbotron{
+    padding-top: 236px;
+    padding-bottom: 165px;
+  }
+  .jumbotron-txt h1{
+    margin-bottom: 20px;
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .jumbotron-txt h2{
+    width: 16px;
+    height: 16px;
+  }
 }
 
 /*********
@@ -86,8 +140,7 @@ li {
 *************/
 .recruit {
   font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 82px;
-  padding: 56/2px 0 75/2px;
+  padding: 37px 0 75/2px;
   font-size: 12px;
   color: #3f3f3f;
   line-height: 20px;
@@ -151,7 +204,40 @@ li {
 *************** 招聘 end ***************
 *************/
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+
+  .navbar {
+    height: 64px;
+    .navbar-collapse ul {
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+  }
+
+  .navbar-brand {
+    padding: 4px 15px;
+    height: 60px;
+  }
+
+  .navbar-brand img {
+    height: 52px;
+  }
+
+  .jumbotron{
+    padding-top: 176px;
+    padding-bottom: 80px;
+  }
+
+  .jumbotron-txt h1{
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .jumbotron-txt h2{
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 767px) {
   .navbar {
     height: 54px;
     .navbar-collapse ul {
@@ -161,12 +247,38 @@ li {
   }
 
   .navbar-brand {
-    padding-top: 8px;
-    height: 36px;
+    padding: 7px 15px;
+    height: 54px;
   }
 
   .navbar-brand img {
-    height: 36px;
+    height: 40px;
+  }
+  .jumbotron{
+    padding-top: 160px;
+    padding-bottom: 55px;
+  }
+  .jumbotron-txt h1{
+    font-size: 28px;
+    line-height:40px;
+  }
+  .jumbotron-txt h2{
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .jumbotron {
+    display: none;
+  }
+  .jumbotron-gif{
+    display: block;
+    margin-top: 54px;
+    padding-top: 480px;
+    padding-bottom: 480px;
+    width: 100%;
+    background-size: cover;
+    background: url(../img/jumbotron_gif.gif) no-repeat center;
   }
   .recruit-arrow {
     width: 18px;
@@ -174,5 +286,4 @@ li {
     top: 20px;
     background-image: url('../img/recruit_arrow_left.png');
   }
-
 }
