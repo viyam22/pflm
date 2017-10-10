@@ -1,3 +1,15 @@
+/*!
+ * Preboot v2
+ *
+ * Open sourced under MIT license by @mdo.
+ * Some variables and mixins from Bootstrap (Apache 2 license).
+ */
+.text-center {
+  text-align: center;
+}
+.center {
+  margin: 0 auto;
+}
 html,
 body {
   font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -6,7 +18,20 @@ body {
   width: 100%;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+  background-color: #fff;
 }
+*:not(img):not(input):not(textarea) {
+  user-select: none;
+  -webkit-user-select: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+/*********
+*************** 顶部导航 start ***************
+*************/
 .navbar {
   height: 82px;
   margin-bottom: 0;
@@ -73,6 +98,12 @@ body {
 .navbar-brand img {
   height: 60px;
 }
+/*********
+*************** 顶部导航 end ***************
+*************/
+/*********
+*************** 顶部 大屏幕banner start ***************
+*************/
 .jumbotron {
   position: relative;
   background-image: url(../img/jumbotron.jpg);
@@ -103,21 +134,148 @@ body {
 .jumbotron-gif {
   display: none;
 }
-@media (max-width: 1199px) {
-  .jumbotron {
-    padding-top: 236px;
-    padding-bottom: 165px;
-  }
-  .jumbotron-txt h1 {
-    margin-bottom: 20px;
-    font-size: 42px;
-    line-height: 52px;
-  }
-  .jumbotron-txt h2 {
-    width: 16px;
-    height: 16px;
-  }
+/*********
+*************** 顶部 大屏幕banner end ***************
+*************/
+/*********
+***************  作品 start ***************
+*************/
+#works {
+  /*padding: 130px 0;*/
+  background: #fff;
+  position: relative;
+  z-index: 1;
 }
+#works .work-title-container {
+  min-height: 80px;
+  padding-top: 4.1%;
+  padding-bottom: 3.1%;
+  text-align: center;
+  color: #3f3f3f;
+  font-family: "Microsoft YaHei";
+}
+#works .work-title-container h1 {
+  font-size: 36px;
+}
+#works .work-title-container span {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ea094b;
+  top: 50px;
+  margin-left: 13px;
+}
+#works .work-title-container h2 {
+  font-size: 24px;
+}
+#works .work-container {
+  margin: 0;
+  width: 100%;
+}
+.work-con:hover .work-overlay {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.work-con {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+.work-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+.work-con img {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.work-con:hover img {
+  cursor: pointer;
+  -webkit-transform: scale(scale(1.5));
+  -moz-transform: scale(scale(1.5));
+  -ms-transform: scale(scale(1.5));
+  -o-transform: scale(scale(1.5));
+  transform: scale(scale(1.5));
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.work-overlay {
+  background: rgba(234, 9, 75, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.work-overlay a {
+  text-decoration: none;
+}
+.work-overlay h1 {
+  position: absolute;
+  width: 100%;
+  font-size: 28px;
+  font-family: "Microsoft YaHei";
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  margin-top: 25%;
+}
+.overlay-text {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  height: 12%;
+  width: 37.9%;
+  margin: 0 auto;
+  margin-top: 37.9%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.overlay-text:hover {
+  background: #fff;
+  color: #ea094b;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/*********
+***************  作品 end ***************
+*************/
 /*********
 *************** 招聘 start ****************
 *************/
@@ -216,6 +374,9 @@ body {
 .recruit-content > ol {
   padding-left: 13px;
 }
+.recruit-content > ol > li {
+  list-style-type: decimal;
+}
 .footer {
   /*width: 100%;
   height: 520px;*/
@@ -234,6 +395,30 @@ body {
 /*********
 *************** 招聘 end ***************
 *************/
+/*********
+*************** 媒体查询 start ***************
+*************/
+@media (max-width: 1199px) {
+  .jumbotron {
+    padding-top: 236px;
+    padding-bottom: 165px;
+  }
+  .jumbotron-txt h1 {
+    margin-bottom: 20px;
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .jumbotron-txt h2 {
+    width: 16px;
+    height: 16px;
+  }
+  .work-overlay h1 {
+    font-size: 24px;
+  }
+  .overlay-text {
+    font-size: 12px;
+  }
+}
 @media (max-width: 991px) {
   .navbar {
     height: 64px;
@@ -260,6 +445,9 @@ body {
   .jumbotron-txt h2 {
     width: 16px;
     height: 16px;
+  }
+  .work-overlay h1 {
+    font-size: 22px;
   }
 }
 @media (max-width: 767px) {
@@ -297,11 +485,18 @@ body {
   .jumbotron-gif {
     display: block;
     margin-top: 54px;
-    padding-top: 480px;
-    padding-bottom: 480px;
+  }
+  .jumbotron-gif .container {
+    padding: 0;
+  }
+  .jumbotron-gif .gif-img {
     width: 100%;
-    background-size: cover;
-    background: url(../img/jumbotron_gif.gif) no-repeat center;
+    padding-top: 42%;
+    padding-bottom: 42%;
+    background-image: url(../img/jumbotron_gif.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   .recruit-arrow {
     width: 18px;
@@ -346,4 +541,11 @@ body {
     padding: 42px 20px 20px;
     line-height: 25px;
   }
+  .work-overlay h1 {
+    font-size: 18px;
+    margin-top: 27%;
+  }
 }
+/*********
+*************** 媒体查询 end ***************
+*************/
