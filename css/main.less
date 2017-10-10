@@ -1,3 +1,4 @@
+@import "preboot.less";
 html, body {
   font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 auto;
@@ -5,11 +6,24 @@ html, body {
   width: 100%;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+  background-color: #fff;
 }
-li {
-  list-style-type:none;
+*:not(img):not(input):not(textarea) {
+  user-select: none;
+  -webkit-user-select: none;
+}
+ul,li {
+  list-style-type: none;
 }
 
+.animation(@animation) {
+  -webkit-animation: @animation;
+  animation: @animation;
+}
+/*********
+*************** 顶部导航 start ***************
+*************/
 .navbar {
   height: 82px;
   margin-bottom: 0;
@@ -30,7 +44,7 @@ li {
   }
 
   .navbar-toggle {
-    border-color:transparent !important;
+    border-color: transparent !important;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -81,59 +95,191 @@ li {
 .navbar-brand img {
   height: 60px;
 }
+/*********
+*************** 顶部导航 end ***************
+*************/
 
-//顶部 大屏幕 banner
-.jumbotron{
+
+/*********
+*************** 顶部 大屏幕banner start ***************
+*************/
+.jumbotron {
   position: relative;
   background-image: url(../img/jumbotron.jpg);
   background-size: cover;
-  //background-size: contain;
   background-repeat: no-repeat;
-  //background-position: center 0;
   background-position: center 0;
   background-color: red;
-  //padding: 82px 0 0;
-  //padding: 390px 0 0;
   margin: 0;
   padding-top: 309px;
   padding-bottom: 190px;
-  .container{
+  .container {
     min-height: 190px;
   }
 }
-.jumbotron-txt h1{
+
+.jumbotron-txt h1 {
   margin-bottom: 30px;
   border: 0;
   color: white;
   font-size: 48px;
-  font-family:"Microsoft YaHei";
+  font-family: "Microsoft YaHei";
   line-height: 70px;
 }
-.jumbotron-txt h2{
+
+.jumbotron-txt h2 {
   width: 20px;
   height: 20px;
   background-color: #ea094b;
 }
-.jumbotron-gif{
+
+.jumbotron-gif {
   display: none;
 }
+/*********
+*************** 顶部 大屏幕banner end ***************
+*************/
 
 
-@media (max-width: 1199px) {
-  .jumbotron{
-    padding-top: 236px;
-    padding-bottom: 165px;
+/*********
+***************  作品 start ***************
+*************/
+#works {
+  /*padding: 130px 0;*/
+  background: #fff;
+  position: relative;
+  z-index:1;
+  .work-title-container{
+    min-height: 80px;
+    padding-top: 4.1%;
+    padding-bottom: 3.1%;
+    text-align: center;
+    color: #3f3f3f;
+    font-family: "Microsoft YaHei";
   }
-  .jumbotron-txt h1{
-    margin-bottom: 20px;
-    font-size: 42px;
-    line-height: 52px;
+  .work-title-container h1{
+    font-size: 36px;
   }
-  .jumbotron-txt h2{
-    width: 16px;
-    height: 16px;
+  .work-title-container span{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #ea094b;
+    top:50px;
+    margin-left: 13px;
+  }
+  .work-title-container h2{
+    font-size: 24px;
+  }
+  .work-container{
+    //padding: 0;
+    margin: 0;
+    width: 100%;
   }
 }
+
+.work-con:hover .work-overlay {
+  opacity: 1;
+  .transition(all 0.3s ease-in-out);
+}
+.work-con {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  .box-sizing(border-box);
+  //width: 25%;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+.work-wrapper {
+  overflow: hidden;
+  width: 100%
+  //position: relative !important;
+  //cursor: pointer;
+
+}
+
+.work-con img {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: auto;
+  .transition(all 0.3s ease-in-out);
+}
+
+.work-con:hover img {
+  cursor: pointer;
+  .scale(scale(1.5));
+  .transition(all 0.3s ease-in-out);
+}
+
+
+.work-overlay {
+  background: rgba(234,9,75,0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  .transition(all 0.3s ease-in-out);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.work-overlay a{
+  text-decoration: none;
+}
+.work-overlay h1{
+  position: absolute;
+  width: 100%;
+  font-size: 28px;
+  font-family: "Microsoft YaHei";
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  margin-top: 25%;
+}
+
+.overlay-text {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  //padding: 1px 2px;
+  //height: 44px;
+  //width: 176px;
+  height: 12%;
+  width: 37.9%;
+  //display: table-cell;
+  margin: 0 auto;
+  margin-top:  37.9%;;
+  //vertical-align: middle;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+
+.overlay-text:hover {
+  background: #fff;
+  color:rgba(234,9,75,1);
+  .transition(all 0.3s ease-in-out);
+}
+
+
+
+/*********
+***************  作品 end ***************
+*************/
+
 
 /*********
 *************** 招聘 start ****************
@@ -145,6 +291,7 @@ li {
   color: #3f3f3f;
   line-height: 20px;
 }
+
 .recruit-title-bg {
   width: 100%;
   height: 134/1.5px;
@@ -155,28 +302,34 @@ li {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .recruit-title {
   text-align: center;
   padding: 4px 0 40px;
 }
+
 .recruit ul {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 .recruit ul > li {
   border-bottom: 0.1px #3f3f3f solid;
   padding: 20px 0;
   position: relative;
 }
+
 .recruit ul > li:first-child {
   border-top: 1px #3f3f3f solid;
 }
+
 .recruit-type {
   font-size: 15px;
   font-weight: bold;
   position: relative;
 }
+
 .recruit-type:after {
   content: "";
   display: block;
@@ -184,9 +337,10 @@ li {
   height: 5px;
   background-color: #ea094b;
   position: absolute;
-  right: -15px; 
+  right: -15px;
   bottom: 2px;
 }
+
 .recruit-arrow {
   width: 36px;
   height: 18px;
@@ -196,14 +350,47 @@ li {
   top: 30px;
   right: 10px;
 }
+
 .recruit-content {
-  padding-top: 18px; 
+  padding-top: 18px;
 }
 
 /*********
 *************** 招聘 end ***************
 *************/
 
+
+
+
+
+
+/*********
+*************** 媒体查询 start ***************
+*************/
+@media (max-width: 1199px) {
+  .jumbotron {
+    padding-top: 236px;
+    padding-bottom: 165px;
+  }
+
+  .jumbotron-txt h1 {
+    margin-bottom: 20px;
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .jumbotron-txt h2 {
+    width: 16px;
+    height: 16px;
+  }
+  .work-overlay h1{
+    font-size: 24px;
+  }
+
+  .overlay-text {
+    font-size: 12px;
+  }
+}
 @media (max-width: 991px) {
 
   .navbar {
@@ -223,20 +410,28 @@ li {
     height: 52px;
   }
 
-  .jumbotron{
+  .jumbotron {
     padding-top: 176px;
     padding-bottom: 80px;
   }
 
-  .jumbotron-txt h1{
+  .jumbotron-txt h1 {
     font-size: 34px;
     line-height: 50px;
   }
-  .jumbotron-txt h2{
+
+  .jumbotron-txt h2 {
     width: 16px;
     height: 16px;
   }
+
+  .work-overlay h1{
+    font-size: 22px;
+  }
+
+
 }
+
 @media (max-width: 767px) {
   .navbar {
     height: 54px;
@@ -254,36 +449,57 @@ li {
   .navbar-brand img {
     height: 40px;
   }
-  .jumbotron{
+
+  .jumbotron {
     padding-top: 160px;
     padding-bottom: 55px;
   }
-  .jumbotron-txt h1{
+
+  .jumbotron-txt h1 {
     font-size: 28px;
-    line-height:40px;
+    line-height: 40px;
   }
-  .jumbotron-txt h2{
+
+  .jumbotron-txt h2 {
     width: 16px;
     height: 16px;
   }
 }
+
 @media (max-width: 640px) {
   .jumbotron {
     display: none;
   }
-  .jumbotron-gif{
+
+  .jumbotron-gif {
     display: block;
     margin-top: 54px;
-    padding-top: 480px;
-    padding-bottom: 480px;
-    width: 100%;
-    background-size: cover;
-    background: url(../img/jumbotron_gif.gif) no-repeat center;
+    .container{
+      padding: 0;
+    }
+    .gif-img{
+      width: 100%;
+      padding-top: 42%;
+      padding-bottom: 42%;
+      background-image: url(../img/jumbotron_gif.gif);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
   }
+
   .recruit-arrow {
     width: 18px;
     height: 36px;
     top: 20px;
     background-image: url('../img/recruit_arrow_left.png');
   }
+
+  .work-overlay h1{
+    font-size: 18px;
+    margin-top: 27%;
+  }
 }
+/*********
+*************** 媒体查询 end ***************
+*************/
