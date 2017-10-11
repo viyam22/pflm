@@ -131,6 +131,12 @@
   -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
           box-shadow: @shadow;
 }
+.transform(@transform){
+  -webkit-transform: @transform;
+  -moz-transform: @transform;
+  -o-transform: @transform;
+  transform: @transform;
+}
 
 // Transitions
 .transition(@transition) {

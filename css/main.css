@@ -34,8 +34,8 @@ a:hover,
 a:link,
 a:active,
 a:visited {
-  text-decoration: none;
-  outline: none;
+  text-decoration: none!important;
+  outline: none!important;
 }
 /*********
 *************** 顶部导航 start ***************
@@ -69,13 +69,11 @@ a:visited {
 .navbar-nav li > a {
   font-size: 16px;
   outline: none;
-  text-decoration: none;
   padding: 20px 17px;
 }
 .navbar-nav li > a:hover:before {
   background-color: transparent;
   outline: none;
-  text-decoration: none;
 }
 .navbar-nav li > a:hover:after,
 .navbar-nav li > a:focus:after,
@@ -88,7 +86,6 @@ a:visited {
   margin-top: 6px;
   background-color: #ea094b !important;
   outline: none;
-  text-decoration: none;
 }
 .navbar-nav li :hover,
 .navbar-nav li :focus,
@@ -149,36 +146,39 @@ a:visited {
 ***************  作品 start ***************
 *************/
 #works {
-  /*padding: 130px 0;*/
   background: #fff;
   position: relative;
   z-index: 1;
 }
-#works .work-title-container {
+#works .work-container {
+  margin: 0;
+  width: 100%;
+}
+.module-container {
+  padding-top: 82px;
+}
+.module-title-container {
   min-height: 80px;
-  padding-top: 4.1%;
-  padding-bottom: 3.1%;
+  padding-bottom: 50px;
   text-align: center;
   color: #3f3f3f;
   font-family: "Microsoft YaHei";
 }
-#works .work-title-container h1 {
+.module-title-container h1 {
   font-size: 36px;
+  margin-top: 10px;
+  line-height: 1;
 }
-#works .work-title-container span {
+.module-title-container span {
   position: absolute;
   width: 8px;
   height: 8px;
   background-color: #ea094b;
-  top: 50px;
+  top: 38px;
   margin-left: 13px;
 }
-#works .work-title-container h2 {
+.module-title-container h2 {
   font-size: 24px;
-}
-#works .work-container {
-  margin: 0;
-  width: 100%;
 }
 .work-con:hover .work-overlay {
   opacity: 1;
@@ -203,7 +203,6 @@ a:visited {
   width: 100%;
 }
 .work-con img {
-  position: relative;
   width: 100%;
   display: block;
   height: auto;
@@ -213,16 +212,14 @@ a:visited {
   transition: all 0.3s ease-in-out;
 }
 .work-con:hover img {
-  cursor: pointer;
-  -webkit-transform: scale(scale(1.5));
-  -moz-transform: scale(scale(1.5));
-  -ms-transform: scale(scale(1.5));
-  -o-transform: scale(scale(1.5));
-  transform: scale(scale(1.5));
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .work-overlay {
   background: rgba(234, 9, 75, 0.8);
@@ -238,30 +235,29 @@ a:visited {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
-  cursor: pointer;
-}
-.work-overlay a {
-  text-decoration: none;
 }
 .work-overlay h1 {
   position: absolute;
   width: 100%;
-  font-size: 28px;
+  font-size: 24px;
   font-family: "Microsoft YaHei";
   text-align: center;
   color: white;
   margin: 0 auto;
-  margin-top: 25%;
+  margin-top: 23%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .overlay-text {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   border: 2px solid #fff;
-  height: 12%;
-  width: 37.9%;
+  height: 44px;
+  width: 180px;
   margin: 0 auto;
-  margin-top: 37.9%;
+  margin-top: 35.9%;
   position: absolute;
   left: 0;
   right: 0;
@@ -269,11 +265,57 @@ a:visited {
   bottom: 0;
   color: #fff;
   text-align: center;
-  display: -webkit-box;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
+  padding: 10px 20px;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 .overlay-text:hover {
+  background: #fff;
+  color: #ea094b;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.more-work-container {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 28px;
+  background-color: #ea094b;
+}
+.more-work-container .more-work-txt {
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  height: 44px;
+  margin: 0;
+  text-align: center;
+  padding: 11.5px 0;
+}
+.more-work-btn {
+  padding: 0 0;
+}
+.more-btn-overlay {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  height: 44px;
+  width: 180px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.more-btn-overlay:hover {
   background: #fff;
   color: #ea094b;
   -webkit-transition: all 0.3s ease-in-out;
@@ -574,12 +616,15 @@ a:visited {
   .overlay-text {
     font-size: 12px;
   }
+  .module-title-container {
+    padding-bottom: 50px;
+  }
 }
 @media (max-width: 991px) {
   .navbar {
     height: 64px;
   }
-  .navbar .navbar-collapse ul {
+  .navbar-collapse ul {
     margin-top: 2px;
     margin-bottom: 2px;
   }
@@ -604,6 +649,24 @@ a:visited {
   }
   .work-overlay h1 {
     font-size: 22px;
+  }
+  .module-container {
+    padding-top: 64px;
+  }
+  .module-title-container {
+    padding-bottom: 35px;
+  }
+  .module-title-container h1 {
+    font-size: 32px;
+  }
+  .module-title-container span {
+    top: 37px;
+    margin-left: 6px;
+    width: 6px;
+    height: 6px;
+  }
+  .module-title-container h2 {
+    font-size: 18px;
   }
 }
 @media (max-width: 767px) {
@@ -633,8 +696,24 @@ a:visited {
     width: 16px;
     height: 16px;
   }
-  .footer-icon {
+  .work-overlay {
     display: none;
+  }
+  .work-con:hover img {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  .module-container {
+    padding-top: 54px;
+  }
+  .module-title-container {
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 640px) {
@@ -650,11 +729,10 @@ a:visited {
   }
   .jumbotron-gif .gif-img {
     width: 100%;
-    padding-top: 42%;
-    padding-bottom: 42%;
-    background-image: url(../img/jumbotron_gif.gif);
+    padding-top: 78.1%;
+    background-image: url(../img/jumbotron_gif_1.gif);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: contain;
   }
   .recruit-arrow {
@@ -703,6 +781,32 @@ a:visited {
   .work-overlay h1 {
     font-size: 18px;
     margin-top: 27%;
+  }
+  .module-title-container h1 {
+    font-size: 24px;
+  }
+  .module-title-container span {
+    top: 28px;
+    margin-left: 5px;
+    width: 6px;
+    height: 6px;
+  }
+  .module-title-container {
+    padding-bottom: 20px;
+  }
+  .module-title-container h2 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .work-con:hover img {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
   }
 }
 /*********
