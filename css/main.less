@@ -1,4 +1,5 @@
 @import "preboot.less";
+
 html, body {
   font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 auto;
@@ -9,17 +10,20 @@ html, body {
   position: relative;
   background-color: #fff;
 }
+
 *:not(img):not(input):not(textarea) {
   user-select: none;
   -webkit-user-select: none;
 }
-ul,li {
+
+ul, li {
   list-style-type: none;
 }
-.animation(@animation) {
-  -webkit-animation: @animation;
-  animation: @animation;
+
+a {
+  text-decoration: none !important;
 }
+
 /*********
 *************** 顶部导航 start ***************
 *************/
@@ -56,14 +60,14 @@ ul,li {
 .navbar-nav li > a {
   font-size: 16px;
   outline: none;
-  text-decoration: none;
+  //text-decoration: none;
   padding: 20px 17px;
 }
 
 .navbar-nav li > a:hover:before {
   background-color: transparent;
   outline: none;
-  text-decoration: none;
+  //text-decoration: none;
 }
 
 .navbar-nav li > a:hover:after, .navbar-nav li > a:focus:after, .navbar-nav li > a:active:after {
@@ -75,7 +79,7 @@ ul,li {
   margin-top: 6px;
   background-color: #ea094b !important;
   outline: none;
-  text-decoration: none;
+  //text-decoration: none;
 }
 
 .navbar-nav li :hover, .navbar-nav li :focus, .navbar-nav li :active {
@@ -94,10 +98,10 @@ ul,li {
 .navbar-brand img {
   height: 60px;
 }
+
 /*********
 *************** 顶部导航 end ***************
 *************/
-
 
 /*********
 *************** 顶部 大屏幕banner start ***************
@@ -135,52 +139,61 @@ ul,li {
 .jumbotron-gif {
   display: none;
 }
+
 /*********
 *************** 顶部 大屏幕banner end ***************
 *************/
-
 
 /*********
 ***************  作品 start ***************
 *************/
 #works {
-  /*padding: 130px 0;*/
   background: #fff;
   position: relative;
-  z-index:1;
-  .work-title-container{
-    min-height: 80px;
-    padding-top: 4.1%;
-    padding-bottom: 3.1%;
-    text-align: center;
-    color: #3f3f3f;
-    font-family: "Microsoft YaHei";
-  }
-  .work-title-container h1{
-    font-size: 36px;
-  }
-  .work-title-container span{
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background-color: #ea094b;
-    top:50px;
-    margin-left: 13px;
-  }
-  .work-title-container h2{
-    font-size: 24px;
-  }
-  .work-container{
+  z-index: 1;
+  .work-container {
     //padding: 0;
     margin: 0;
     width: 100%;
   }
 }
 
+.module-container {
+  padding-top: 82px;
+}
+
+.module-title-container {
+  min-height: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #3f3f3f;
+  font-family: "Microsoft YaHei";
+}
+
+.module-title-container h1 {
+  font-size: 36px;
+  margin-top: 10px;
+  line-height: 1;
+}
+
+.module-title-container span {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ea094b;
+  top: 38px;
+  margin-left: 13px;
+}
+
+.module-title-container h2 {
+  font-size: 24px;
+}
+
 .work-con:hover .work-overlay {
   opacity: 1;
   .transition(all 0.3s ease-in-out);
 }
+
 .work-con {
   position: relative;
   margin: 0;
@@ -191,16 +204,13 @@ ul,li {
   float: left;
   overflow: hidden;
 }
+
 .work-wrapper {
   overflow: hidden;
   width: 100%
-  //position: relative !important;
-  //cursor: pointer;
-
 }
 
 .work-con img {
-  position: relative;
   width: 100%;
   display: block;
   height: auto;
@@ -208,14 +218,12 @@ ul,li {
 }
 
 .work-con:hover img {
-  cursor: pointer;
-  .scale(scale(1.5));
   .transition(all 0.3s ease-in-out);
+  .transform(scale(1.1));
 }
 
-
 .work-overlay {
-  background: rgba(234,9,75,0.8);
+  background: rgba(234, 9, 75, 0.8);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -225,20 +233,21 @@ ul,li {
   opacity: 0;
   .transition(all 0.3s ease-in-out);
   box-sizing: border-box;
-  cursor: pointer;
+  //cursor: pointer;
 }
-.work-overlay a{
-  text-decoration: none;
-}
-.work-overlay h1{
+
+.work-overlay h1 {
   position: absolute;
   width: 100%;
-  font-size: 28px;
+  font-size: 24px;
   font-family: "Microsoft YaHei";
   text-align: center;
   color: white;
   margin: 0 auto;
-  margin-top: 25%;
+  margin-top: 23%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .overlay-text {
@@ -246,15 +255,12 @@ ul,li {
   font-weight: 600;
   text-transform: uppercase;
   border: 2px solid #fff;
-  //padding: 1px 2px;
-  //height: 44px;
-  //width: 176px;
-  height: 12%;
-  width: 37.9%;
-  //display: table-cell;
+  //height: 12%;
+  //width: 37.9%;
+  height: 44px;
+  width: 180px;
   margin: 0 auto;
-  margin-top:  37.9%;;
-  //vertical-align: middle;
+  margin-top: 35.9%;
   position: absolute;
   left: 0;
   right: 0;
@@ -262,23 +268,73 @@ ul,li {
   bottom: 0;
   color: #fff;
   text-align: center;
-  display: -webkit-box;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
+  padding: 10px 20px;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .overlay-text:hover {
   background: #fff;
-  color:rgba(234,9,75,1);
+  color: rgba(234, 9, 75, 1);
   .transition(all 0.3s ease-in-out);
 }
 
-
+.more-work-container {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 28px;
+  background-color: #ea094b;
+  .more-work-txt {
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+    height: 44px;
+    margin: 0;
+    //display: -webkit-box;
+    //-webkit-box-align: center;
+    //-webkit-box-pack: center;
+    text-align: center;
+    padding: 11.5px 0;
+  }
+}
+.more-work-btn{
+  //width: 100%;
+  //margin: 0 auto;
+  padding: 0 0;
+}
+.more-btn-overlay {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  //height: 12%;
+  //width: 37.9%;
+  height: 44px;
+  width: 180px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  //display: table-cell;
+  //vertical-align: middle;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.more-btn-overlay:hover {
+  background: #fff;
+  color: rgba(234, 9, 75, 1);
+  .transition(all 0.3s ease-in-out);
+}
 
 /*********
 ***************  作品 end ***************
 *************/
-
 
 /*********
 *************** 招聘 start ****************
@@ -409,11 +465,6 @@ ul,li {
 *************** 招聘 end ***************
 *************/
 
-
-
-
-
-
 /*********
 *************** 媒体查询 start ***************
 *************/
@@ -433,14 +484,20 @@ ul,li {
     width: 16px;
     height: 16px;
   }
-  .work-overlay h1{
+
+  .work-overlay h1 {
     font-size: 24px;
   }
 
   .overlay-text {
     font-size: 12px;
   }
+
+  .module-title-container {
+    padding-bottom: 50px;
+  }
 }
+
 @media (max-width: 991px) {
 
   .navbar {
@@ -475,10 +532,32 @@ ul,li {
     height: 16px;
   }
 
-  .work-overlay h1{
+  .work-overlay h1 {
     font-size: 22px;
   }
 
+  .module-container {
+    padding-top: 64px;
+  }
+
+  .module-title-container {
+    padding-bottom: 35px;
+  }
+
+  .module-title-container h1 {
+    font-size: 32px;
+  }
+
+  .module-title-container span {
+    top: 37px;
+    margin-left: 6px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .module-title-container h2 {
+    font-size: 18px;
+  }
 
 }
 
@@ -514,6 +593,23 @@ ul,li {
     width: 16px;
     height: 16px;
   }
+
+  .work-overlay {
+    display: none;
+  }
+
+  .work-con:hover img {
+    .transition(none);
+    .transform(none);
+  }
+
+  .module-container {
+    padding-top: 54px;
+  }
+
+  .module-title-container {
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -524,16 +620,17 @@ ul,li {
   .jumbotron-gif {
     display: block;
     margin-top: 54px;
-    .container{
+    .container {
       padding: 0;
     }
-    .gif-img{
+    .gif-img {
       width: 100%;
-      padding-top: 42%;
-      padding-bottom: 42%;
-      background-image: url(../img/jumbotron_gif.gif);
+      //height: 500px;
+      padding-top: 78.1%;
+      //padding-bottom: 42%;
+      background-image: url(../img/jumbotron_gif_1.gif);
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: top;
       background-size: contain;
     }
   }
@@ -582,11 +679,37 @@ ul,li {
     line-height: 25px;
   }
 
-  .work-overlay h1{
+  .work-overlay h1 {
     font-size: 18px;
     margin-top: 27%;
   }
+
+  .module-title-container h1 {
+    font-size: 24px;
+  }
+
+  .module-title-container span {
+    top: 28px;
+    margin-left: 5px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .module-title-container {
+    padding-bottom: 20px;
+  }
+
+  .module-title-container h2 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .work-con:hover img {
+    .transition(none);
+    .transform(none);
+  }
 }
+
 /*********
 *************** 媒体查询 end ***************
 *************/
