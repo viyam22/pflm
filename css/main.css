@@ -21,9 +21,8 @@ body {
   position: relative;
   background-color: #fff;
 }
-*:not(img):not(input):not(textarea) {
-  user-select: none;
-  -webkit-user-select: none;
+.html-stop-scroll {
+  overflow: hidden !important;
 }
 ul,
 li {
@@ -36,6 +35,62 @@ a:active,
 a:visited {
   text-decoration: none !important;
   outline: none !important;
+}
+.hide-page {
+  display: none !important;
+}
+.row {
+  margin: 0;
+}
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+  padding: 0;
 }
 /*********
 *************** 顶部导航 start ***************
@@ -154,6 +209,10 @@ a:visited {
   margin: 0;
   width: 100%;
 }
+#projects .project-container .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .module-container {
   padding-top: 82px;
 }
@@ -241,12 +300,12 @@ a:visited {
   left: 0;
   right: 0;
   top: 0;
-  opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
+  opacity: 0;
 }
 .project-overlay h1 {
   position: absolute;
@@ -256,7 +315,7 @@ a:visited {
   text-align: center;
   color: white;
   margin: 0 auto;
-  margin-top: 23%;
+  margin-top: 22%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -269,7 +328,7 @@ a:visited {
   height: 44px;
   width: 180px;
   margin: 0 auto;
-  margin-top: 35.9%;
+  margin-top: 34%;
   position: absolute;
   left: 0;
   right: 0;
@@ -282,6 +341,10 @@ a:visited {
   vertical-align: middle;
   cursor: pointer;
   box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .overlay-text:hover {
   background: #fff;
@@ -326,6 +389,11 @@ a:visited {
   padding: 10px 20px;
   cursor: pointer;
   box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  line-height: normal;
 }
 .more-btn-overlay:hover {
   background: #fff;
@@ -352,6 +420,7 @@ a:visited {
   top: 0;
   z-index: 9999 !important;
   background-color: rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
 }
 .popup-inner-wrap {
   padding: 0;
@@ -367,20 +436,22 @@ a:visited {
   background-color: #fff;
 }
 .project-slidebar {
-  position: absolute;
+  position: relative;
   right: 0;
   box-sizing: border-box;
-  width: 23%;
+  width: 25%;
   height: 100%;
   z-index: 2;
+  float: right;
 }
 .project-detail {
+  position: relative;
   box-sizing: border-box;
-  margin-right: 23%;
-  max-width: 77%;
+  max-width: 75%;
   word-wrap: break-word;
   z-index: 1;
   border-right: solid 1px #e8e8e8;
+  float: left;
 }
 .project-module {
   padding-bottom: 8%;
@@ -407,6 +478,49 @@ a:visited {
 .project-block .strategy-txt {
   text-align: justify;
   font-weight: normal !important;
+  line-height: 1.5;
+}
+.project-x-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.project-x-btn img {
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.project-x-btn:hover img {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.project-logo {
+  width: 128px;
+}
+.project-title {
+  text-align: justify;
+}
+.project-block h3 {
+  color: #3f3f3f;
+  font-size: 24px;
+}
+.background-txt,
+.strategy-txt {
+  text-align: justify;
+  font-weight: normal !important;
   line-height: 1.2;
 }
 .project-title {
@@ -419,6 +533,7 @@ a:visited {
   font-size: 16px;
 }
 .project-block h4 {
+  font-size: 18px;
   font-weight: bold;
 }
 .project-block span {
@@ -426,10 +541,6 @@ a:visited {
 }
 .project-block-no-border {
   border-bottom: none !important;
-}
-.project-logo {
-  width: 128px;
-  height: 70px;
 }
 /*********
 ***************  作品详情页 end ***************
@@ -1008,20 +1119,54 @@ a:visited {
     height: 16px;
   }
   .project-overlay h1 {
-    font-size: 24px;
+    font-size: 20px;
+    margin-top: 20%;
   }
   .overlay-text {
     font-size: 12px;
+    height: 36px;
+    width: 140px;
+    margin-top: 32%;
+    padding: 7px 20px;
+  }
+  .more-btn-overlay {
+    font-size: 12px;
+    height: 36px;
+    width: 140px;
+    padding: 7px 20px;
+  }
+  .more-project-container {
+    padding-top: 25px;
+    padding-bottom: 22px;
   }
   .module-title-container {
     padding-bottom: 50px;
+  }
+  .project-block {
+    padding: 18px;
+  }
+  .project-block .background-txt,
+  .project-block .strategy-txt {
+    line-height: 1.5;
+  }
+  .project-logo {
+    width: 110px;
+  }
+  .project-block h3 {
+    font-size: 22px;
+  }
+  .project-block h5 {
+    font-size: 14px;
+  }
+  .project-block h4 {
+    font-size: 16px;
   }
 }
 @media (max-width: 991px) {
   .navbar {
     height: 64px;
   }
-  .navbar-collapse ul {
+  .navbar .navbar-collapse ul {
     margin-top: 2px;
     margin-bottom: 2px;
   }
@@ -1043,9 +1188,6 @@ a:visited {
   .jumbotron-txt h2 {
     width: 16px;
     height: 16px;
-  }
-  .project-overlay h1 {
-    font-size: 22px;
   }
   .module-container {
     padding-top: 64px;
@@ -1072,6 +1214,25 @@ a:visited {
   .module-content .module-content-title {
     font-size: 20px;
     line-height: 36px;
+  }
+  .project-block {
+    padding: 18px;
+  }
+  .project-block .background-txt,
+  .project-block .strategy-txt {
+    line-height: 1.5;
+  }
+  .project-logo {
+    width: 80px;
+  }
+  .project-block h3 {
+    font-size: 20px;
+  }
+  .project-block h5 {
+    font-size: 12px;
+  }
+  .project-block h4 {
+    font-size: 14px;
   }
   .module-content .module-content-s {
     font-size: 12px;
@@ -1107,6 +1268,29 @@ a:visited {
   }
   .project-overlay {
     display: none;
+  }
+  .more-btn-overlay {
+    width: 158px;
+    height: 36px;
+    padding: 8px 20px;
+  }
+  .more-project-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .more-project-container .more-project-txt {
+    height: 36px;
+    font-size: 16px;
+  }
+  .more-project-container .project-con:hover img {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
   }
   .project-con:hover img {
     -webkit-transition: none;
@@ -1154,10 +1338,15 @@ a:visited {
   .jumbotron-gif .gif-img {
     width: 100%;
     padding-top: 78.1%;
-    background-image: url(../img/jumbotron_gif_1.gif);
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
+  }
+  .jumbotron-gif .gif-img1 {
+    background-image: url(../img/jumbotron_gif_1.gif);
+  }
+  .jumbotron-gif .gif-img2 {
+    background-image: url(../img/jumbotron_gif_2.gif);
   }
   .recruit-arrow {
     top: 20px;
@@ -1227,15 +1416,15 @@ a:visited {
   }
   .more-btn-overlay {
     width: 158px;
-    height: 40px;
+    height: 36px;
     padding: 8px 20px;
   }
   .more-project-container {
-    padding-top: 15px;
+    padding-top: 4px;
     padding-bottom: 15px;
   }
   .more-project-container .more-project-txt {
-    height: 40px;
+    height: 36px;
     font-size: 16px;
   }
   .more-project-container .project-con:hover img {
@@ -1306,10 +1495,13 @@ a:visited {
   .who-content-s {
     display: block;
   }
-  .partner-logo {
+  .partner-logo img {
+    width: 80%;
+  }
+  .partner-logo img .partner-logo {
     display: none;
   }
-  .partner-logo-s {
+  .partner-logo img .partner-logo-s {
     display: block;
   }
 }

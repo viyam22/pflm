@@ -7,7 +7,10 @@
           content="width=device-width, initial-scale=1 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>普方创意中心</title>
-
+    <link rel="shortcut icon" href="favicon.jpg">
+    <meta name="keywords" content="普方,普方立民,普方创意,创意,广告,营销,策划,品牌,传播,广告营销,创意营销,营销策划,品牌营销,广告创意,广告创意,社会化营销">
+    <meta name="subject" content="创意,广告,营销,策划,品牌,传播,广告营销,创意营销,营销策划,品牌营销,广告创意,广告创意,社会化营销">
+    <meta name="description" content="普方,普方立民,普方创意,创意,广告,营销,策划,品牌,传播,广告营销,创意营销,营销策划,品牌营销,广告创意,广告创意,社会化营销">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--<link href="css/preboot.css" rel="stylesheet">-->
@@ -25,7 +28,8 @@
 <header class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button class="glyphicon glyphicon-remove navbar-toggle collapsed" type="button" aria-hidden="true" style="display: none"></button>
+            <button class="glyphicon glyphicon-remove navbar-toggle collapsed" type="button" aria-hidden="true"
+                    style="display: none"></button>
             <button class="navbar-toggle collapsed" type="button">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -36,16 +40,21 @@
                 <img alt='Brand' src="svg/logo.svg">
             </a>
         </div>
-
         <div class="navbar-collapse collapse" role="navigation">
             </ul>
             <ul class="nav navbar-nav">
-                <li><a class="smoothScroll" href="#projects">作 品</a></li>
-                <li><a class="smoothScroll" href="#">伙 伴</a></li>
-                <li><a class="smoothScroll" href="#">服 务</a></li>
-                <li><a class="smoothScroll" href="#">我 们</a></li>
+                <li>
+                    <a class="smoothScroll" href="#projects">作 品
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="smoothScroll" href="#partner">伙 伴</a>
+                </li>
+                <li><a class="smoothScroll" href="#service">服 务</a></li>
+                <li><a class="smoothScroll" href="#who">我 们</a></li>
                 <li><a class="smoothScroll" href="#recruit">加 入</a></li>
-                <li><a class="smoothScroll" href="#">联 系</a></li>
+                <li><a class="smoothScroll" href="#footer">联 系</a></li>
             </ul>
         </div>
     </div>
@@ -101,9 +110,11 @@
     </div>
     <div class="more-project-container container">
         <div class="row">
-            <h1 class="more-project-txt col-md-12 col-sm-12 col-xs-6">欲罢不能？我们还有……</h1>
-            <a class="more-project-btn col-md-12 col-sm-12 col-xs-6">
-                <div class="more-btn-overlay">VIEW MORE ∨</div>
+            <h1 class="more-project-txt col-md-12 col-sm-12 col-xs-12">欲罢不能？我们还有……</h1>
+            <a class="more-project-btn col-md-12 col-sm-12 col-xs-12">
+                <div class="more-btn-overlay">VIEW MORE
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                </div>
             </a>
         </div>
     </div>
@@ -111,7 +122,7 @@
 <!-- 我的作品 end -->
 
 <!-- 作品详情页 start -->
-<div id="project-popup" class="project-popup" style="display: none;">
+<div id="project-popup" class="project-popup hide-page">
     <div class="container">
         <div class="popup-inner-wrap">
             <div class="popup-wrap">
@@ -122,48 +133,52 @@
                             <img alt='Brand' src="svg/logo.svg">
                         </div>
                         <h3 class="project-title">今时今日的家电，一言不合就上天</h3>
+
+                        <!-- 关闭 -->
+                        <a id="project-x-btn" class="project-x-btn">
+                            <img alt='close-btn' src="img/projects/x.png">
+                        </a>
                     </div>
                     <div class="project-block">
                         <h5 class="project-type">作品类型 / 社会化营销 H5</h5>
                         <h5 class="project-trade">行业 / 家电</h5>
-                        <h5 class="project-customer">行业 / 家电</h5>
+                        <h5 class="project-client">客户 / 海信集团</h5>
                     </div>
                     <div class="project-block project-block-no-border">
                         <div class="project-background">
                             <h4>背景 <span>——</span></h4>
-                            <h4 class="txt">
+                            <h4 class="background-txt">
                                 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。
                             </h4>
                         </div>
                         <br>
                         <div class="project-strategy">
                             <h4>策略 <span>——</span></h4>
-                            <h4 class="txt">
+                            <h4 class="strategy-txt">
                                 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。
                             </h4>
                         </div>
                     </div>
                 </div>
                 <!--中间滚动区域-->
-                <div class="project-detail">
-                    <div class="project-module">
-                        <img src="img/projects/project1-1.jpg"/>
-                    </div>
-                    <div class="project-module">
-                        <img src="img/projects/project1-2.png"/>
-                    </div>
-                    <div class="project-module">
-                        <img src="img/projects/project1-3.png"/>
-                    </div>
-                    <div class="project-module">
-                        <img src="img/projects/project1-4.jpg"/>
-                    </div>
-                    <div class="project-module">
-                        <img src="img/projects/project1-qr.png"/>
-                    </div>
+                <div id="project-detail" class="project-detail">
+                    <!-- <div class="project-module">
+                         <img src="img/projects/project1_1.jpg"/>
+                     </div>
+                     <div class="project-module">
+                         <img src="img/projects/project1_2.png"/>
+                     </div>
+                     <div class="project-module">
+                         <img src="img/projects/project1_3.png"/>
+                     </div>
+                     <div class="project-module">
+                         <img src="img/projects/project1_4.jpg"/>
+                     </div>
+                     <div class="project-module">
+                         <img src="img/projects/project1_qr.png"/>
+                     </div>-->
                 </div>
-                <!-- 关闭 -->
-                <div></div>
+
             </div>
         </div>
     </div>
@@ -468,16 +483,16 @@
         <img src="img/logo_4a_s.png">
     </div>
     <div class="who-content-s module-content">
-            普方创意中心是一个专业、精益求精的的团队。</br>
-            扎根深圳、广州、杭州，
-            力求用科学方法探讨创意无限可能、并帮助客户达成营销目标。</br>
-            </br>
-            超过10年的营销策划沉淀，
-            我们学会用数据描绘变幻的市场温度，
-            更学会，用心体察恒久的人情世故；
-            习惯用创意表达桀骜不驯与主张，
-            更习惯，聆听您一路的故事与不简单。
-        </div>
+        普方创意中心是一个专业、精益求精的的团队。</br>
+        扎根深圳、广州、杭州，
+        力求用科学方法探讨创意无限可能、并帮助客户达成营销目标。</br>
+        </br>
+        超过10年的营销策划沉淀，
+        我们学会用数据描绘变幻的市场温度，
+        更学会，用心体察恒久的人情世故；
+        习惯用创意表达桀骜不驯与主张，
+        更习惯，聆听您一路的故事与不简单。
+    </div>
 </div>
 <!-- 我们是谁 end -->
 
@@ -490,7 +505,7 @@
             </div>
         </div>
     </div>
-        <!-- <div class="recruit-title-bg"><span>我们在找你</span></div> -->
+    <!-- <div class="recruit-title-bg"><span>我们在找你</span></div> -->
     <div class="container module-content">
         <div class="recruit-title">
             我们是一个文能赋诗写段子、武能风火做执行的靠谱团队。</br>
@@ -542,6 +557,7 @@
     </div>
 </div>
 
+
 <div id="footer" class=" module-container">
     <div class="footer">
         <div class="container">
@@ -574,7 +590,7 @@
                     </div>
                 </div>
                 <div class="footer-join col-lg-3 col-md-3 col-sm-3 col-xs-4">
-                    <div class="footer-join-title"><span class="ft-red">JOIN US</span>  加入我们</div>
+                    <div class="footer-join-title"><span class="ft-red">JOIN US</span> 加入我们</div>
                     <div class="footer-join-mail"><span class="ft-white">xiej@pflm.cn</span> （深圳）</div>
                     <div class="footer-join-mail"><span class="ft-white">wucs@pflm.cn</span> （广州）</div>
                     <img src="img/footer_code.png" class="footer-code">
@@ -597,7 +613,7 @@
         </div>
         <div class="end-copyright">
             深圳市普方立民科技股份有限公司 版权所有</br> Copyright©2016
-        <span class="end-icp">粤ICP备15085065号</span>
+            <span class="end-icp">粤ICP备15085065号</span>
         </div>
     </div>
 </div>
