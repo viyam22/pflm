@@ -163,6 +163,16 @@ a, a:hover, a:link, a:active, a:visited {
   padding-top: 82px;
 }
 
+.module-content {
+  font-size: 18px;
+  line-height: 28px
+}
+
+.module-content .module-content-title {
+  font-size: 22px;
+  line-height: 36px;
+}
+
 .module-title-container {
   min-height: 80px;
   padding-bottom: 50px;
@@ -343,7 +353,7 @@ a, a:hover, a:link, a:active, a:visited {
 /*********
 ***************  作品详情页 start ***************
 *************/
-.project-popup{
+.project-popup {
   border: 0 none;
   bottom: 0;
   left: 0;
@@ -352,18 +362,20 @@ a, a:hover, a:link, a:active, a:visited {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 9999!important;
-  background-color: rgba(0,0,0,0.8);
-  .container{
+  z-index: 9999 !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  .container {
 
   }
 }
-.popup-inner-wrap{
+
+.popup-inner-wrap {
   padding: 0;
   //padding-top: 100px;
   padding-top: 5.2%;
 }
-.popup-wrap{
+
+.popup-wrap {
   margin-bottom: 80px;
   box-sizing: border-box;
   width: 100%;
@@ -371,11 +383,12 @@ a, a:hover, a:link, a:active, a:visited {
   position: relative;
   text-align: center;
   display: inline-block;
-  background-color:#fff;
+  background-color: #fff;
 
 }
+
 //右侧 固定区域
-.project-slidebar{
+.project-slidebar {
   position: absolute;
   right: 0;
   box-sizing: border-box;
@@ -384,8 +397,9 @@ a, a:hover, a:link, a:active, a:visited {
   z-index: 2;
   //background-color: rgba(0,0,0,0.3);
 }
+
 //左侧 滚动区域
-.project-detail{
+.project-detail {
   box-sizing: border-box;
   //margin-right: 320px;
   margin-right: 23%;
@@ -394,10 +408,12 @@ a, a:hover, a:link, a:active, a:visited {
   z-index: 1;
   border-right: solid 1px #e8e8e8;
 }
-.project-module{
+
+.project-module {
   padding-bottom: 8%;
 }
-.project-module img{
+
+.project-module img {
   width: auto;
   height: auto;
   display: inline-block;
@@ -415,27 +431,33 @@ a, a:hover, a:link, a:active, a:visited {
   width: 100%;
   z-index: 3;
   text-align: left;
-  .txt{
+  .txt {
     text-align: justify;
-    font-weight: normal!important;
+    font-weight: normal !important;
   }
 }
-.project-block h5{
+
+.project-block h5 {
   font-size: 16px;
 }
-.project-block h4{
+
+.project-block h4 {
   font-weight: bold;
 }
-.project-block span{
+
+.project-block span {
   color: #ea094b;
 }
-.project-block-no-border{
-  border-bottom:none!important;
+
+.project-block-no-border {
+  border-bottom: none !important;
 }
-.project-logo{
+
+.project-logo {
   width: 128px;
   height: 70px;
 }
+
 /*********
 ***************  作品详情页 end ***************
 *************/
@@ -444,14 +466,13 @@ a, a:hover, a:link, a:active, a:visited {
 *************** 招聘 start ****************
 *************/
 .recruit {
-  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 37px 0 75/2px;
   font-size: 12px;
   color: #3f3f3f;
   line-height: 20px;
 }
 
 .recruit-title-bg {
+  padding: 10px;
   width: 100%;
   height: 134/1.5px;
   margin: 0 auto;
@@ -469,18 +490,7 @@ a, a:hover, a:link, a:active, a:visited {
   position: relative;
 }
 
-.recruit-title-bg > span:before {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  background-color: #ea094b;
-  position: absolute;
-  right: -20px;
-  bottom: 3px;
-}
-
-.recruit-title-bg > span:after {
+.recruit-title-bg h1:after {
   content: "";
   display: block;
   width: 40px;
@@ -488,8 +498,8 @@ a, a:hover, a:link, a:active, a:visited {
   background-color: #ea094b;
   position: absolute;
   left: 50%;
-  bottom: -16px;
-  transform: translateX(-50%);
+  bottom: -10px;
+  .transform(translateX(-50%))
 }
 
 .recruit-title {
@@ -519,7 +529,7 @@ a, a:hover, a:link, a:active, a:visited {
 }
 
 .recruit-type {
-  font-size: 15px;
+  /*font-size: 15px;*/
   font-weight: bold;
   position: relative;
 }
@@ -550,7 +560,7 @@ a, a:hover, a:link, a:active, a:visited {
 }
 
 .recruit-content > ol {
-  padding-left: 13px;
+  padding-left: 20px;
 }
 
 .recruit-content > ol > li {
@@ -558,11 +568,10 @@ a, a:hover, a:link, a:active, a:visited {
 }
 
 .footer {
-  /*width: 100%;
-  height: 520px;*/
   background-size: cover;
   background-image: url('../img/footer_bg.jpg');
-  padding: 40px 0;
+  background-position: center;
+  padding-bottom: 40px;
   color: #c1c1c1;
   font-size: 10px;
 }
@@ -581,8 +590,9 @@ a, a:hover, a:link, a:active, a:visited {
   padding: 0 20px;
 }
 
-.footer-content > a, a:hover, a:link, a:active, a:visited {
+.footer-content a, .footer-content a:hover, .footer-content a:link, .footer-content a:active, .footer-content a:visited {
   color: #c1c1c1;
+  cursor: pointer;
 }
 
 .footer-pflm:hover, .footer-pflm:link, .footer-pflm:active, .footer-pflm:visited {
@@ -593,7 +603,20 @@ a, a:hover, a:link, a:active, a:visited {
   font-size: 24px;
   text-align: center;
   color: #fff;
-  padding-bottom: 40px;
+  padding: 40px 0;
+}
+
+.footer-title-s {
+  display: none;
+  font-size: 24px;
+  text-align: left;
+  color: #fff;
+  padding: 25px 0;
+}
+
+.footer-icon {
+  padding-left: 0 !important;
+  /*padding-right: 0!important; */
 }
 
 .footer-pflm {
@@ -621,7 +644,6 @@ a, a:hover, a:link, a:active, a:visited {
 
 .footer-contact {
   float: left;
-  padding: 0 2% 0 2%;
 }
 
 .footer-contact-title {
@@ -644,6 +666,7 @@ a, a:hover, a:link, a:active, a:visited {
 
 .footer-contact-content {
   padding-top: 25px;
+  line-height: 20px;
 }
 
 .footer-contact-name {
@@ -688,6 +711,10 @@ a, a:hover, a:link, a:active, a:visited {
   position: absolute;
   left: 0;
   top: 3px;
+}
+
+.footer-join {
+  padding-right: 0 !important;
 }
 
 .footer-join-title {
@@ -735,10 +762,148 @@ a, a:hover, a:link, a:active, a:visited {
   margin: 0 auto;
   margin-top: 35px;
 }
+
+.end-content {
+  background-color: #ea094b;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+}
+
+.end-content-s {
+  display: none;
+  text-align: center;
+  color: #474748;
+  font-size: 12px;
+}
+
+.end-icp {
+  position: relative;
+  margin-left: 25px;
+}
+
+.end-icp:before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url('../img/badge.png');
+  width: 15.3px;
+  height: 17.1px;
+  background-size: cover;
+  top: 0;
+  left: -20px;
+}
+
+.end-pflm img {
+  float: left;
+  height: 35px;
+}
+
+.end-pflm {
+  padding: 30px 20px;
+}
+
+.end-pflm div {
+  padding-left: 120px;
+  line-height: 20px;
+  text-align: left;
+  height: 30px;
+}
+
+.end-copyright {
+  border-top: 1px #b3b3b3 solid;
+  padding: 20px 0;
+  line-height: 20px;
+}
+
+.who-bg {
+  background-image: url('../img/who_bg.png');
+  padding: 30px 0;
+  background-size: cover;
+}
+
+.who-bg-s {
+  display: none;
+  background-image: url('../img/who_bg_s.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 15px;
+}
+
+.who-bg-s img {
+  height: 40px;
+  margin: 20px 0 0 20px;
+}
+
+.who-bg-s .who-title {
+  text-align: left;
+}
+
+.who-title {
+  color: #fff;
+}
+
+.who-title h1:after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: #ea094b;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  .transform(translateX(-50%));
+}
+
+.who-bg-s .who-title h1:after {
+  left: 20px;
+  .transform(none);
+  bottom: -14px;
+}
+
+.who-bg-s h2 {
+  line-height: 20px;
+}
+
+.who-content {
+  color: #fff;
+  text-align: center;
+}
+
+.who-content-s {
+  display: none;
+  padding: 25px 35px 0;
+}
+
+.who-bg img {
+  margin: 0 auto;
+  display: block;
+  height: 135px;
+  padding: 30px 0 0;
+}
+
+.partnet-logo {
+  height: 80px;
+  position: relative;
+  /*background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 15px;
+  padding-left: 0px;
+  padding-right: 0px;  */
+}
+
+.partnet-logo img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  .transform(translate(-50%, -50%));
+}
+
 /*********
 *************** 招聘 end ***************
 *************/
-
 
 /*********
 *************** 媒体查询 start ***************
@@ -777,10 +942,11 @@ a, a:hover, a:link, a:active, a:visited {
 
   .navbar {
     height: 64px;
-    .navbar-collapse ul {
-      margin-top: 2px;
-      margin-bottom: 2px;
-    }
+  }
+
+  .navbar-collapse ul {
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   .navbar-brand {
@@ -834,6 +1000,16 @@ a, a:hover, a:link, a:active, a:visited {
     font-size: 18px;
   }
 
+  .module-content {
+    font-size: 16px;
+    line-height: 28px
+  }
+
+  .module-content .module-content-title {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -869,12 +1045,25 @@ a, a:hover, a:link, a:active, a:visited {
     height: 16px;
   }
 
+  .project-overlay {
+    display: none;
+  }
+
+  .project-con:hover img {
+    .transition(none);
+    .transform(none);
+  }
+
   .module-container {
     padding-top: 54px;
   }
 
   .module-title-container {
     padding-bottom: 30px;
+  }
+
+  .footer-icon {
+    display: none
   }
 }
 
@@ -900,13 +1089,11 @@ a, a:hover, a:link, a:active, a:visited {
   }
 
   .recruit-arrow {
-    width: 18px;
-    height: 36px;
     top: 20px;
-    background-image: url('../img/recruit_arrow_left.png');
   }
 
   .recruit-title-bg {
+    padding: 50px 0;
     width: 100%;
     height: 150px;
     background-image: url('../img/recruit_title_s1.png');
@@ -934,7 +1121,7 @@ a, a:hover, a:link, a:active, a:visited {
     position: relative;
   }
 
-  .recruit-title-bg > span:after {
+  .recruit-title-bg h1:after {
     display: none;
   }
 
@@ -946,6 +1133,14 @@ a, a:hover, a:link, a:active, a:visited {
     display: block;
     padding: 42px 20px 20px;
     line-height: 25px;
+  }
+
+  .recruit-content > ol {
+    padding-left: 16px;
+  }
+
+  .recruit ul > li {
+    padding: 10px 0;
   }
 
   .project-overlay h1 {
@@ -973,11 +1168,12 @@ a, a:hover, a:link, a:active, a:visited {
     margin-top: 10px;
   }
 
-  .more-btn-overlay {
-    width: 158px;
-    height: 40px;
-    padding: 8px 20px;
-  }
+
+.more-btn-overlay {
+  width: 158px;
+  height: 40px;
+  padding: 8px 20px;
+}
 
   .more-project-container {
     padding-top: 15px;
@@ -986,6 +1182,69 @@ a, a:hover, a:link, a:active, a:visited {
       height: 40px;
       font-size: 16px;
     }
+    .project-con:hover img {
+      .transition(none);
+      .transform(none);
+    }
+
+  }
+
+  .module-content {
+    font-size: 14px;
+    line-height: 24px
+  }
+  .module-content .module-content-title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .footer-contact {
+    float: none;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .footer-join {
+    padding-top: 30px;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .footer-code {
+    display: none;
+  }
+  .footer-join-mail {
+    float: left;
+    margin-right: 20px;
+  }
+  .footer-title {
+    display: none;
+  }
+  .footer-title-s {
+    display: block;
+  }
+  .footer {
+    background-image: url('../img/footer_bg-s.jpg');
+  }
+  .end-content {
+    display: none
+  }
+  .end-content-s {
+    display: block;
+  }
+  .who-bg {
+    display: none
+  }
+  .who-bg-s {
+    display: block;
+  }
+  .who-content {
+    display: none;
+  }
+  .who-content-s {
+    display: block;
+  }
+  .partnet-logo img {
+    width: 80%;
   }
 }
 
