@@ -11,9 +11,8 @@ html, body {
   background-color: #fff;
 }
 
-*:not(img):not(input):not(textarea) {
-  user-select: none;
-  -webkit-user-select: none;
+.html-stop-scroll {
+  overflow: hidden !important;
 }
 
 ul, li {
@@ -23,6 +22,28 @@ ul, li {
 a, a:hover, a:link, a:active, a:visited {
   text-decoration: none !important;
   outline: none !important;
+}
+
+.hide-page {
+  display: none !important;
+}
+
+.row {
+  margin: 0;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12,
+.col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5,
+.col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9,
+.col-md-1, .col-md-10, .col-md-11, .col-md-12,
+.col-md-2, .col-md-3, .col-md-4, .col-md-5,
+.col-md-6, .col-md-7, .col-md-8, .col-md-9,
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+.col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10,
+.col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4,
+.col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  padding: 0;
 }
 
 /*********
@@ -156,6 +177,10 @@ a, a:hover, a:link, a:active, a:visited {
     //padding: 0;
     margin: 0;
     width: 100%;
+    .row {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
   }
 }
 
@@ -241,10 +266,9 @@ a, a:hover, a:link, a:active, a:visited {
   left: 0;
   right: 0;
   top: 0;
-  opacity: 0;
   .transition(all 0.3s ease-in-out);
   box-sizing: border-box;
-  //cursor: pointaer;
+  opacity: 0;
 }
 
 .project-overlay h1 {
@@ -255,7 +279,7 @@ a, a:hover, a:link, a:active, a:visited {
   text-align: center;
   color: white;
   margin: 0 auto;
-  margin-top: 23%;
+  margin-top: 22%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -271,7 +295,7 @@ a, a:hover, a:link, a:active, a:visited {
   height: 44px;
   width: 180px;
   margin: 0 auto;
-  margin-top: 35.9%;
+  margin-top: 34%;
   position: absolute;
   left: 0;
   right: 0;
@@ -284,6 +308,7 @@ a, a:hover, a:link, a:active, a:visited {
   vertical-align: middle;
   cursor: pointer;
   box-sizing: border-box;
+  .transition(all 0.3s ease-in-out);
 }
 
 .overlay-text:hover {
@@ -303,9 +328,6 @@ a, a:hover, a:link, a:active, a:visited {
     line-height: 1;
     height: 44px;
     margin: 0;
-    //display: -webkit-box;
-    //-webkit-box-align: center;
-    //-webkit-box-pack: center;
     text-align: center;
     padding: 11.5px 0;
   }
@@ -334,10 +356,10 @@ a, a:hover, a:link, a:active, a:visited {
   color: #fff;
   text-align: center;
   padding: 10px 20px;
-  //display: table-cell;
-  //vertical-align: middle;
   cursor: pointer;
   box-sizing: border-box;
+  .transition(all 0.3s ease-in-out);
+  line-height: normal;
 }
 
 .more-btn-overlay:hover {
@@ -354,6 +376,7 @@ a, a:hover, a:link, a:active, a:visited {
 ***************  作品详情页 start ***************
 *************/
 .project-popup {
+  //display: none;
   border: 0 none;
   bottom: 0;
   left: 0;
@@ -364,9 +387,7 @@ a, a:hover, a:link, a:active, a:visited {
   top: 0;
   z-index: 9999 !important;
   background-color: rgba(0, 0, 0, 0.8);
-  .container {
-
-  }
+  -webkit-font-smoothing: antialiased;
 }
 
 .popup-inner-wrap {
@@ -379,7 +400,7 @@ a, a:hover, a:link, a:active, a:visited {
   margin-bottom: 80px;
   box-sizing: border-box;
   width: 100%;
-  //height: 100px;
+  //min-height: 700px;
   position: relative;
   text-align: center;
   display: inline-block;
@@ -389,24 +410,27 @@ a, a:hover, a:link, a:active, a:visited {
 
 //右侧 固定区域
 .project-slidebar {
-  position: absolute;
+  position: relative;
   right: 0;
   box-sizing: border-box;
-  width: 23%;
+  width: 25%;
   height: 100%;
   z-index: 2;
   //background-color: rgba(0,0,0,0.3);
+  float: right;
 }
 
 //左侧 滚动区域
 .project-detail {
+  position: relative;
   box-sizing: border-box;
   //margin-right: 320px;
-  margin-right: 23%;
-  max-width: 77%;
+  //margin-right: 25%;
+  max-width: 75%;
   word-wrap: break-word;
   z-index: 1;
   border-right: solid 1px #e8e8e8;
+  float: left;
 }
 
 .project-module {
@@ -431,10 +455,47 @@ a, a:hover, a:link, a:active, a:visited {
   width: 100%;
   z-index: 3;
   text-align: left;
-  .txt {
+  .background-txt, .strategy-txt {
     text-align: justify;
     font-weight: normal !important;
+    line-height: 1.5;
   }
+}
+
+.project-x-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  //text-align: center;
+  cursor: pointer;
+}
+
+.project-x-btn img {
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+  .transition(all 0.3s ease-in-out);
+}
+
+.project-x-btn:hover img {
+  .transition(all 0.3s ease-in-out);
+  .transform(scale(1.2));
+}
+
+.project-logo {
+  width: 128px;
+  //height: 70px;
+}
+
+.project-title {
+  text-align: justify;
+}
+
+.project-block h3 {
+  color: #3f3f3f;
+  font-size: 24px;
 }
 
 .project-block h5 {
@@ -442,6 +503,7 @@ a, a:hover, a:link, a:active, a:visited {
 }
 
 .project-block h4 {
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -451,11 +513,6 @@ a, a:hover, a:link, a:active, a:visited {
 
 .project-block-no-border {
   border-bottom: none !important;
-}
-
-.project-logo {
-  width: 128px;
-  height: 70px;
 }
 
 /*********
@@ -883,7 +940,7 @@ a, a:hover, a:link, a:active, a:visited {
   padding: 30px 0 0;
 }
 
-.partnet-logo {
+.partner-logo {
   height: 80px;
   position: relative;
   /*background-size: contain;
@@ -894,7 +951,7 @@ a, a:hover, a:link, a:active, a:visited {
   padding-right: 0px;  */
 }
 
-.partnet-logo img {
+.partner-logo img {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -926,15 +983,55 @@ a, a:hover, a:link, a:active, a:visited {
   }
 
   .project-overlay h1 {
-    font-size: 24px;
+    font-size: 20px;
+    margin-top: 20%;
   }
 
   .overlay-text {
     font-size: 12px;
+    height: 36px;
+    width: 140px;
+    margin-top: 32%;
+    padding: 7px 20px;
+  }
+
+  .more-btn-overlay {
+    font-size: 12px;
+    height: 36px;
+    width: 140px;
+    padding: 7px 20px;
+  }
+
+  .more-project-container {
+    padding-top: 25px;
+    padding-bottom: 22px;
   }
 
   .module-title-container {
     padding-bottom: 50px;
+  }
+
+  .project-block {
+    padding: 18px;
+    .background-txt, .strategy-txt {
+      line-height: 1.5;
+    }
+  }
+
+  .project-logo {
+    width: 110px;
+  }
+
+  .project-block h3 {
+    font-size: 22px;
+  }
+
+  .project-block h5 {
+    font-size: 14px;
+  }
+
+  .project-block h4 {
+    font-size: 16px;
   }
 }
 
@@ -942,11 +1039,11 @@ a, a:hover, a:link, a:active, a:visited {
 
   .navbar {
     height: 64px;
-  }
 
-  .navbar-collapse ul {
-    margin-top: 2px;
-    margin-bottom: 2px;
+    .navbar-collapse ul {
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
   }
 
   .navbar-brand {
@@ -973,10 +1070,18 @@ a, a:hover, a:link, a:active, a:visited {
     height: 16px;
   }
 
-  .project-overlay h1 {
-    font-size: 22px;
-  }
-
+  //.project-overlay h1 {
+  //  font-size: 22px;
+  //  margin-top:20%;
+  //}
+  //
+  //.overlay-text {
+  //  font-size: 12px;
+  //  height: 36px;
+  //  width: 140px;
+  //  margin-top:32%;
+  //  padding: 7px 20px;
+  //}
   .module-container {
     padding-top: 64px;
   }
@@ -1008,6 +1113,29 @@ a, a:hover, a:link, a:active, a:visited {
   .module-content .module-content-title {
     font-size: 20px;
     line-height: 36px;
+  }
+
+  .project-block {
+    padding: 18px;
+    .background-txt, .strategy-txt {
+      line-height: 1.5;
+    }
+  }
+
+  .project-logo {
+    width: 80px;
+  }
+
+  .project-block h3 {
+    font-size: 20px;
+  }
+
+  .project-block h5 {
+    font-size: 12px;
+  }
+
+  .project-block h4 {
+    font-size: 14px;
   }
 
 }
@@ -1049,6 +1177,25 @@ a, a:hover, a:link, a:active, a:visited {
     display: none;
   }
 
+  .more-btn-overlay {
+    width: 158px;
+    height: 36px;
+    padding: 8px 20px;
+  }
+
+  .more-project-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .more-project-txt {
+      height: 36px;
+      font-size: 16px;
+    }
+    .project-con:hover img {
+      .transition(none);
+      .transform(none);
+    }
+  }
+
   .project-con:hover img {
     .transition(none);
     .transform(none);
@@ -1081,11 +1228,18 @@ a, a:hover, a:link, a:active, a:visited {
     .gif-img {
       width: 100%;
       padding-top: 78.1%;
-      background-image: url(../img/jumbotron_gif_1.gif);
+      //background-image: url(../img/jumbotron_gif_1.gif);
       background-repeat: no-repeat;
       background-position: top;
       background-size: contain;
     }
+    .gif-img1 {
+      background-image: url(../img/jumbotron_gif_1.gif);
+    }
+    .gif-img2 {
+      background-image: url(../img/jumbotron_gif_2.gif);
+    }
+
   }
 
   .recruit-arrow {
@@ -1168,82 +1322,95 @@ a, a:hover, a:link, a:active, a:visited {
     margin-top: 10px;
   }
 
-
-.more-btn-overlay {
-  width: 158px;
-  height: 40px;
-  padding: 8px 20px;
-}
+  .more-btn-overlay {
+    width: 158px;
+    height: 36px;
+    padding: 8px 20px;
+  }
 
   .more-project-container {
     padding-top: 15px;
     padding-bottom: 15px;
     .more-project-txt {
-      height: 40px;
+      height: 36px;
       font-size: 16px;
     }
     .project-con:hover img {
       .transition(none);
       .transform(none);
     }
-
   }
 
   .module-content {
     font-size: 14px;
     line-height: 24px
   }
+
   .module-content .module-content-title {
     font-size: 18px;
     line-height: 32px;
   }
+
   .footer-contact {
     float: none;
     width: 100%;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
   .footer-join {
     padding-top: 30px;
     width: 100%;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
   .footer-code {
     display: none;
   }
+
   .footer-join-mail {
     float: left;
     margin-right: 20px;
   }
+
   .footer-title {
     display: none;
   }
+
   .footer-title-s {
     display: block;
   }
+
   .footer {
     background-image: url('../img/footer_bg-s.jpg');
   }
+
   .end-content {
     display: none
   }
+
   .end-content-s {
     display: block;
   }
+
   .who-bg {
     display: none
   }
+
   .who-bg-s {
     display: block;
   }
+
   .who-content {
     display: none;
   }
+
   .who-content-s {
     display: block;
   }
-  .partnet-logo img {
+
+  .partner-logo img {
     width: 80%;
   }
 }

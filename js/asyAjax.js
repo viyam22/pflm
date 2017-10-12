@@ -3,11 +3,10 @@
  */
 
 ////////////////////////////////////////////////////////////
-var urlArr = ["projectList",'workDetail'];
+var urlArr = ["projectList",'projectView'];
 var urlObj = new UrlSearch();
-var userToken = urlObj.userToken;
-var isLocalhost = (urlObj.rootPath.indexOf("192.168.") > -1) || (urlObj.rootPath.indexOf("localhost") > -1) || (String(urlObj.test).indexOf("localhost") > -1);
-// isLocalhost = true;   /////是否本地
+// var isLocalhost = (urlObj.rootPath.indexOf("192.168.") > -1) || (urlObj.rootPath.indexOf("localhost") > -1) || (String(urlObj.test).indexOf("localhost") > -1);
+isLocalhost = true;   /////是否本地
 var urlPath = isLocalhost ? "json/" : "http://hisense2.pflm.cn/lottery2017/";  ////接口地址
 var urlType = isLocalhost ? ".json" : ".do";   ////接口文件后缀
 for (var i = 0; i < urlArr.length; i++) {
@@ -46,8 +45,10 @@ function ajaxSend(url, sendData, callback) {
             }
         },
         complete: function (XMLHttpRequest, textStatus) {
+
+            // console.log("url:" + url + ",服务器错误::status:" , XMLHttpRequest,"     textStatus:",textStatus);
             if (textStatus != "success") {
-                console.log("url:" + url + ",服务器错误::status:" + XMLHttpRequest.status);
+                console.log("url:" + url + ",服务器错误::status:" , XMLHttpRequest,"     textStatus:",textStatus);
                 reData.code = "-1";
                 reData.msg = "服务器错误：" + XMLHttpRequest.status;
                 if (callback) {
