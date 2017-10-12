@@ -1,0 +1,38 @@
+{
+  "code": 1,
+  "msg": "返回消息",
+  "data": [
+    {
+      "id":"hs01",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"projectId2",
+      "title": "作品2的标题",
+      "projectType": "2社会化营销 H5",
+      "trade": "2家电",
+      "client": "2海信集团",
+      "background": "22017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "2MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    }
+  ]
+}

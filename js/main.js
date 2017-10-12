@@ -1,23 +1,33 @@
-var curProjectId = '', idArr = [], _listE, _viewE;
+var curProjectId = '', idArr = [], _listE, _viewE, hashId, $root;
 $(document).ready(function () {
     Math.random() > 0.5 ? $(".gif-img").addClass('gif-img1') : $(".gif-img").addClass('gif-img2')
-
     ajaxSend(window.url_projectList, '', window.initProjectList);
     /* 按钮点击 滑动切换 */
-    jQuery(function ($) {
-        var $root = $('html, body');
-        $('.smoothscroll').click(function () {
-            var href = $.attr(this, 'href');
-            $root.animate({
-                scrollTop: $(href).offset().top
-            }, 600, 'easeInOutExpo', function () {
-                window.location.hash = href;
-            });
-            return false;
+    $root = $('html, body');
+
+    $('.smoothScroll').click(function () {
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 600, 'easeInOutExpo', function () {
+            window.location.hash = href;
         });
+        // console.info("href=",href,"   offset().top=",$(href).offset().top);
+        return false;
     });
 
+    $('#navbar-more').click(function () {
+        if ($("#navbar-more").hasClass('collapsed')) {
+            document.addEventListener("touchmove", stopFn);
+        } else {
+            document.removeEventListener("touchmove", stopFn);
+        }
+    });
 });
+
+function stopFn(e) {
+    e.preventDefault();
+};
 
 function initProjectList(e) {
     if (e.code == 1) {
@@ -25,7 +35,7 @@ function initProjectList(e) {
         // console.info(!isPc());
         if (browser.ipad || browser.android || browser.iphone) {  //移动端  ipad端
             //点击作品 view,跳转作品详情
-            for (var i = 0; i < e.data.length; i++) {
+            for (var i = 0; i < e.data.length-4; i++) {
                 projectListDivStr +=
                     '<a id="projectBtn-' + e.data[i].id + '" class="project-con col-md-3 col-sm-6 col-xs-6">' +
                     '<div class="project-wrapper"> ' +
@@ -35,7 +45,7 @@ function initProjectList(e) {
             }
         } else {//PC端
             //点击作品  弹出黑色弹窗
-            for (var i = 0; i < e.data.length; i++) {
+            for (var i = 0; i < e.data.length-4; i++) {
                 projectListDivStr +=
                     '<div class="project-con col-md-3 col-sm-6 col-xs-6">' +
                     '<div class="project-wrapper"> ' +
@@ -53,6 +63,29 @@ function initProjectList(e) {
         }
         $("#project-container .row").html(projectListDivStr);
         initProjectBtn(e);
+        hashId = window.location.hash;
+        // hashId = '#footer';
+        if (hashId) {
+            var loaded = 0, percentNum;
+            for (var i = 0, j = e.data.length; i < j; i++) {
+                var img = new Image;
+                img.onload = update;
+                img.src = e.data[i].imgUrl;
+            }
+            function update() {
+                loaded += 1;
+                percentNum = Math.ceil((loaded / e.data.length) * 100);
+                // console.info("aaaa  =  ",percentNum);
+                if (percentNum == 100) {
+                    $root.animate({
+                        scrollTop: $(hashId).offset().top
+                    }, 600, 'easeInOutExpo', function () {
+                        window.location.hash = hashId;
+                    });
+                }
+            }
+        }
+
     } else {
         alert(e.msg);
     }
@@ -60,7 +93,7 @@ function initProjectList(e) {
 
 function initProjectBtn(e) {
     _listE = e;
-    for (var i = 0; i < _listE.data.length; i++) {
+    for (var i = 0; i < _listE.data.length-4; i++) {
         (function (i) {
             $("#projectBtn-" + _listE.data[i].id).on("click", function (e) {
                 // console.info("按钮   id= " + _listE.data[i].id);
@@ -145,7 +178,7 @@ $("#project-x-btn").on("click", function () {
     idArr = [];
 });
 
-
+//检测平台
 var browser = {
     win    : false,
     mac    : false,
@@ -154,7 +187,6 @@ var browser = {
     iphone : false,
     android: false
 };
-//检测平台
 var p = navigator.platform;
 browser.win = p.indexOf("Win") == 0;
 browser.mac = p.indexOf("Mac") == 0;
@@ -164,3 +196,17 @@ browser.iphone = (navigator.userAgent.match(/iPhone/i) != null) ? true : false;
 browser.android = (navigator.userAgent.match(/Android/i) != null || navigator.userAgent.match(/Linux/i) != null) ? true : false;
 
 // console.log("browser=   iPad iphone android mac  win ",browser.ipad,browser.iphone,browser.android,browser.mac,browser.win);
+
+if (browser.iphone || browser.ipad || browser.android || ((browser.win || browser.mac) && window.innerWidth < 768)) {
+    $('.main-navigation').onePageNav({
+        scrollThreshold: 0.2, // Adjust if Navigation highlights too early or too late
+        scrollOffset   : 75, //Height of Navigation Bar
+        filter         : ':not(.external)',
+        changeHash     : true
+    });
+
+    $('.navbar-collapse a').click(function () {
+        $(".navbar-collapse").collapse('hide');
+        document.removeEventListener("touchmove", stopFn);
+    });
+}

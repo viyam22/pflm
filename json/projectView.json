@@ -3,7 +3,65 @@
   "msg": "返回消息",
   "data": [
     {
-      "id":"hs01",
+      "id":"project1",
+      "title": "沉迷在7月的琶洲，无法自拔",
+      "projectType": "社会化营销",
+      "trade": "通信业",
+      "client": "广东电信",
+      "background": "中国电信集团公司将于2017年7月27日至30日，在广州琶洲展览中心和高通公司联合主办“2017年天翼智能终端交易博览会”。针对本次博览会的电信主展台、人工智能专区等策划线上传播活动，在为现场吸引人气的同时展示中国电信的时尚性及互动性。",
+      "strategy": "天翼智能终端交易博览会是通信业界乃至全社会的一场科技盛宴，我们沿用大会主题“智能创造未来”作为传播主题，输出超过60套优质的海报、视频素材，并运用时下流行的拼接艺术和蒸汽波风格作为视觉包装，最终刷爆7月朋友圈并成功为现场吸引40W人流。",
+      "imgSrc":[
+        "img/projects/project1_b.jpg",
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.jpg",
+        "img/projects/project1_3.jpg",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_5.jpg",
+        "img/projects/project1_6.gif",
+        "img/projects/project1_7.gif",
+        "img/projects/project1_8.gif",
+        "img/projects/project1_9.gif",
+        "img/projects/project1_10.gif",
+        "img/projects/project1_11.png"
+      ]
+    },
+    {
+      "id":"project2",
+      "title": "苏格拉宁的地球大冒险",
+      "projectType": "IP创意",
+      "trade": "电商",
+      "client": "苏宁易购",
+      "background": "品牌IP化已经是大势所趋，作为电商行业的领先品牌，对此渴望俘获更多年轻人芳心的苏宁看得很清楚。于是，在接下来的营销方向中无论是内容还是渠道都增添了与年轻人的互动，抓住80、90后贱萌暖的网络文化。推出自制品牌IP——苏格拉宁。借助和年轻人互黑、互撩、互动的行为建立有异于苏宁以往相对较与沉闷的年轻化品牌形象。",
+      "strategy": "在这个前提下，普方创意中心提出通过刻画一个“苏格拉宁地球大冒险”的包装形式为苏格拉宁构建“萌贱、暖男、全能大师”世界观和价值观，并伴随剧情的推进创造出五个不同形态的小狮子和苏格拉宁一起对应苏宁集团的六大产业，在拉近消费者心理距离的同时兼顾IP和品牌之间的联系。",
+      "imgSrc":[
+        "img/projects/project2_b.jpg",
+        "img/projects/project2_1.jpg",
+        "img/projects/project2_2.jpg",
+        "img/projects/project2_3.jpg",
+        "img/projects/project2_4.jpg",
+        "img/projects/project2_5.jpg",
+        "img/projects/project2_6.jpg"
+      ]
+    },
+    {
+      "id":"project3",
+      "title": "天翼请了苏轼唱RAP，就为了让你多打电话",
+      "projectType": "数字互动 社会化营销 H5 视频",
+      "trade": "通信业",
+      "client": "广东电信",
+      "background": "中国电信将全面取消4G套餐的国内长途漫游费，积极响应国家提速降费的号召。",
+      "strategy": "恰逢中秋团圆佳节，但很多人背井离乡与亲友缺乏沟通，因此我们用“多打电话，话费不用怕”作为传播主题，呼吁人们就算不能回家也要多打电话。我们改编《水调歌头》将诗句逐条场景还原，并以苏轼为原型创作插画，同时邀请著名编曲人陈挥之编曲演绎。而且为了满足手机端和PC端的不同观看体验，我们输出了竖版H5和横版视频两种表现形式，最终在电信体系成功刷屏。",
+      "imgSrc":[
+        "img/projects/project3_b.png",
+        "img/projects/project3_1.jpg",
+        "img/projects/project3_2.jpg",
+        "img/projects/project3_3.jpg",
+        "img/projects/project3_4.jpg",
+        "img/projects/project3_5.png"
+      ]
+    },
+    {
+      "id":"project4",
       "title": "hs01作品1的标题",
       "projectType": "hs01社会化营销 H5",
       "trade": "hs01家电",
@@ -19,7 +77,183 @@
       ]
     },
     {
-      "id":"projectId2",
+      "id":"project5",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"project6",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"project7",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"project8",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"project9",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"project10",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"project11",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"project12",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"project13",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"project14",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"project15",
+      "title": "hs01作品1的标题",
+      "projectType": "hs01社会化营销 H5",
+      "trade": "hs01家电",
+      "client": "hs01海信集团",
+      "background": "hs01 2017海信电视即将上市全年旗舰型号MU9600，被命名为‘天玑’。从技术到造型都采用超高配置，客户寄望通过高端机型，塑造科技感、未来感，更着力带动品牌调性的提高。",
+      "strategy": "hs01 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。",
+      "imgSrc":[
+        "img/projects/project1_1.jpg",
+        "img/projects/project1_2.png",
+        "img/projects/project1_3.png",
+        "img/projects/project1_4.jpg",
+        "img/projects/project1_qr.png"
+      ]
+    },
+    {
+      "id":"project16",
       "title": "作品2的标题",
       "projectType": "2社会化营销 H5",
       "trade": "2家电",

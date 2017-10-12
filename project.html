@@ -24,7 +24,7 @@
 </head>
 
 <!-- 顶部按钮 start -->
-<header class="navbar navbar-default navbar-fixed-top">
+<!--<header class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" type="button">
@@ -38,9 +38,44 @@
             </a>
         </div>
     </div>
+</header>-->
+<!-- 顶部按钮 end -->
+<!-- 顶部按钮 start -->
+<header class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!--顶部固定栏-->
+        <div class="navbar-header">
+            <!--<button class="glyphicon glyphicon-remove navbar-toggle collapsed hide-page" type="button" aria-hidden="true"></button>-->
+            <!--   <button id='navbar-x' class="navbar-toggle collapsed hide-page" type="button">
+                   <i class="ti-close"></i>
+               </button>-->
+
+            <button id='navbar-more' class="navbar-toggle collapsed" type="button" data-toggle="collapse"
+                    data-target="#rock-navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">
+                <img alt='Brand' src="svg/logo.svg">
+            </a>
+        </div>
+
+        <!-- 按钮   移动端添加 navbar-mobile ,如果宽度超出768 移除 navbar-mobile   -->
+        <nav class="navbar-bg mobile-bg nav navbar-collapse collapse" role="navigation" id="rock-navigation">
+            <ul id="mobile-btn-list" class="nav navbar-nav-mobile navbar-right main-navigation text-uppercase">
+                <li><a class="smoothScroll navbar-item col-sm-6" href="index.html#projects"><span>OUR WORKS</span></br>作 品</a></li>
+                <li><a class="smoothScroll navbar-item col-sm-6" href="index.html#partner"><span>OUR PARTNER</span></br>伙 伴</a></li>
+                <li><a class="smoothScroll navbar-item col-sm-6" href="index.html#service"><span>OUR SERVICE</span></br>服 务</a></li>
+                <li><a class="smoothScroll navbar-item col-sm-6" href="index.html#who"><span>ABOUT US</span></br>我 们</a></li>
+                <li><a class="smoothScroll navbar-item col-sm-6" href="index.html#recruit"><span>JOIN US</span></br>加 入</a></li>
+                <li><a class="smoothScroll navbar-item col-sm-6" href="index.html#footer"><span>CONTACT US</span></br>联 系</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <!-- 顶部按钮 end -->
-
 <!-- 作品详情 start -->
 <div id="project" class="project">
     <div class="container">

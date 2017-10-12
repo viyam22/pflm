@@ -99,7 +99,8 @@ a:visited {
   padding-left: 14px;
 }
 .navbar .navbar-collapse {
-  float: right;
+  border-bottom: solid 1px #ededed;
+  border-color: transparent;
 }
 .navbar .navbar-collapse ul {
   margin-top: 11px;
@@ -117,9 +118,43 @@ a:visited {
 .navbar-brand {
   height: 54px;
   font-size: 22px;
+  padding: 7px 15px;
 }
 .navbar-brand span {
   color: #888;
+}
+.navbar-brand img {
+  height: 40px;
+}
+/* -------------------------------    移动端按钮     --------------------------------  */
+.mobile-bg {
+  background-color: #fff;
+  background-image: url('../img/button_bg.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+.navbar-nav-mobile li:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #ea094b;
+  position: absolute;
+  top: 17px;
+}
+.navbar-nav-mobile-li {
+  width: 50%;
+  float: left;
+}
+.navbar-nav-mobile a {
+  color: #404041;
+}
+.navbar-nav-mobile a > span {
+  font-weight: bold;
+}
+.navbar-item {
+  position: relative;
 }
 /*********
 *************** 顶部导航 end ***************
