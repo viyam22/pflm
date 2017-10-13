@@ -1545,11 +1545,14 @@ a:visited {
   }
   .partner-logo img .partner-logo-s {
     display: block;
+<<<<<<< HEAD
   }
   .mobile-bg {
     background-image: url('../img/button_bg.png');
     background-size: 50%;
     overflow: hidden;
+=======
+>>>>>>> 59f666642bf7fbf7dc607a0ac0d27452c03e384b
   }
 }
 /*********
