@@ -1,0 +1,219 @@
+/*!
+ * Preboot v2
+ *
+ * Open sourced under MIT license by @mdo.
+ * Some variables and mixins from Bootstrap (Apache 2 license).
+ */
+.text-center {
+  text-align: center;
+}
+.center {
+  margin: 0 auto;
+}
+html,
+body {
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  background-color: #fff;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a,
+a:hover,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none !important;
+  outline: none !important;
+}
+.row {
+  margin: 0;
+}
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+  padding: 0;
+}
+/*********
+*************** 顶部导航 start ***************
+*************/
+.navbar {
+  height: 54px;
+  margin-bottom: 0;
+  border-bottom: solid 1px #ededed;
+  box-sizing: border-box;
+}
+.navbar .container {
+  padding-left: 14px;
+}
+.navbar .navbar-collapse {
+  border-bottom: solid 1px #ededed;
+  border-color: transparent;
+}
+.navbar .navbar-collapse ul {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.navbar .navbar-toggle {
+  border-color: transparent !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.navbar .navbar-toggle:focus,
+.navbar .navbar-toggle:hover {
+  background-color: transparent !important;
+}
+.navbar-brand {
+  height: 54px;
+  font-size: 22px;
+  padding: 7px 15px;
+}
+.navbar-brand span {
+  color: #888;
+}
+.navbar-brand img {
+  height: 40px;
+}
+/* -------------------------------    移动端按钮     --------------------------------  */
+.mobile-bg {
+  background-color: #fff;
+  background-image: url('../img/button_bg.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+.navbar-nav-mobile li:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #ea094b;
+  position: absolute;
+  top: 17px;
+}
+.navbar-nav-mobile-li {
+  width: 50%;
+  float: left;
+}
+.navbar-nav-mobile a {
+  color: #404041;
+}
+.navbar-nav-mobile a > span {
+  font-weight: bold;
+}
+.navbar-item {
+  position: relative;
+}
+/*********
+*************** 顶部导航 end ***************
+*************/
+/*********
+*************** 作品详情 start ***************
+*************/
+.project {
+  margin-top: 54px;
+}
+.project .container {
+  padding: 0;
+}
+.project .project-block {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 4.5%;
+  border-bottom: solid 1px #3f3f3f;
+  text-align: left;
+}
+.project .project-block .background-txt,
+.project .project-block .strategy-txt {
+  text-align: justify;
+  font-weight: normal !important;
+  line-height: 1.5;
+}
+.project .project-block h2 {
+  font-size: 22px;
+  margin-top: 0;
+  color: #3f3f3f;
+  text-align: justify;
+  line-height: 1;
+}
+.project .project-block h5 {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.project .project-module {
+  padding-bottom: 8%;
+  text-align: center;
+}
+.project .project-bottom {
+  text-align: center;
+  background-color: #000;
+}
+.project .project-module img,
+.project .project-bottom img {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  max-width: 100%;
+}
+.project .project-block-no-border {
+  border: none;
+}
+.project .project-block span {
+  color: #ea094b;
+}
+/*********
+*************** 作品详情 end ***************
+*************/
