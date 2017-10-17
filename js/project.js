@@ -48,7 +48,7 @@ var projectViewData={
         },
         {
             "id":"project3",
-            "title": "天翼请了苏轼唱RAP，就为了让你多打电话",
+            "title": "天翼请了苏轼来唱RAP",
             "projectType": "数字互动 社会化营销 H5 视频",
             "trade": "通信业",
             "client": "广东电信",
@@ -65,7 +65,7 @@ var projectViewData={
         },
         {
             "id":"project4",
-            "title": "如今家电也不淡定，跨界就玩古典艺术",
+            "title": "家电跨界，来一场演奏会",
             "projectType": "数字互动 社会化营销 H5",
             "trade": "家电",
             "client": "海信集团",
@@ -85,7 +85,7 @@ var projectViewData={
         },
         {
             "id":"project5",
-            "title": "海信悦享博物馆，献给悦享视界的你",
+            "title": "献给你的悦享博物馆",
             "projectType": "社会化营销",
             "trade": "家电",
             "client": "海信集团",
@@ -121,7 +121,7 @@ var projectViewData={
         },
         {
             "id":"project7",
-            "title": "每个重大节日，创维对你不离不弃",
+            "title": "每个重大节日都有创维在身边",
             "projectType": "社会化营销 品牌创意",
             "trade": "家电",
             "client": "创维电视",
@@ -144,7 +144,7 @@ var projectViewData={
         },
         {
             "id":"project8",
-            "title": "这故事的脑洞有毒，特别是第二个！",
+            "title": "这套系列故事的脑洞有毒",
             "projectType": "品牌创意 社会化营销 视频",
             "trade": "通信业",
             "client": "广东电信",
@@ -164,7 +164,7 @@ var projectViewData={
         },
         {
             "id":"project9",
-            "title": "面对一成不变的生活，活出了自己的璀璨 ",
+            "title": "活出自己的璀璨",
             "projectType": "社会化营销 IP创意 H5",
             "trade": "家电",
             "client": "海信集团",
@@ -184,7 +184,7 @@ var projectViewData={
         },
         {
             "id":"project10",
-            "title": "茶餐厅里的CP党，你猜是谁跟谁？",
+            "title": "茶餐厅里有CP党出没",
             "projectType": "品牌创意 社会化营销 视频",
             "trade": "通信业",
             "client": "广东电信",
@@ -199,7 +199,7 @@ var projectViewData={
         },
         {
             "id":"project11",
-            "title": "对付网络“水军”最好的办法是什么？",
+            "title": "人人都是公关经理",
             "projectType": "社会化营销 H5",
             "trade": "家电",
             "client": "海信集团",
@@ -217,7 +217,7 @@ var projectViewData={
         },
         {
             "id":"project12",
-            "title": "能把智能生态博览会办成这样也没谁了！",
+            "title": "7月琶洲星光闪闪",
             "projectType": "线下营销 IP创意",
             "trade": "通信业",
             "client": "广东电信",
@@ -243,7 +243,7 @@ var projectViewData={
         },
         {
             "id":"project13",
-            "title": "一份最具匠心的缘来·上上签",
+            "title": "来抽一支上上签",
             "projectType": "社会化营销 H5",
             "trade": "通信业",
             "client": "广州联通",
@@ -262,7 +262,7 @@ var projectViewData={
         },
         {
             "id":"project14",
-            "title": "这份海报合集，堪称运营商界的杜蕾斯",
+            "title": "品牌符号创意最溜在这里",
             "projectType": "品牌创意 社会化营销",
             "trade": "通信业",
             "client": "广东电信",
@@ -284,7 +284,7 @@ var projectViewData={
         },
         {
             "id":"project15",
-            "title": "创维国足官方赞助商，够霸气，才得胜",
+            "title": "赞助国足要够霸气才得胜",
             "projectType": "社会化营销 品牌创意",
             "trade": "家电",
             "client": "创维电视",
@@ -303,7 +303,7 @@ var projectViewData={
         },
         {
             "id":"project16",
-            "title": "据说平均每5个人就有1人是……",
+            "title": "点击查看你的五人关系",
             "projectType": "社会化营销",
             "trade": "通信业",
             "client": "广东电信",
@@ -337,76 +337,76 @@ $(document).ready(function () {
 
         window.initProjectView(projectViewData)
     }
-    // checkScreen();
+    checkScreen();
 });
 
-// function checkScreen() {
-//     // console.info(window.innerWidth,window.innerHeight);
-//
-//     if (browser.iphone || browser.android) { //手机
-//         $("#pc-btn-list").addClass("hide-page");
-//         $("#mobile-btn-list").removeClass("hide-page");
-//         //添加按钮花纹
-//         $(".navbar-bg").addClass("mobile-bg");
-//
-//         if (window.innerWidth < window.innerHeight) {
-//             // console.info("竖屏");
-//             $('#mobile-btn-list li').removeClass('navbar-nav-mobile-li');
-//             $(".navbar-fixed-top .navbar-collapse").css({
-//                 "max-height": (window.screen.height - 54) + "px",
-//                 "overflow"  : "hidden"
-//             });
-//             $("#mobile-btn-list").css("min-height", (window.screen.height - 54) + "px");
-//             $("#mobile-btn-list").css("max-height", (window.screen.height - 54) + "px");
-//             $(".navbar-bg").addClass("mobile-bg");
-//         } else {
-//             // console.info("横屏");
-//             if (window.innerWidth < 768) {  //显示"汉堡包"按钮
-//                 $('.mobile-bg').css({'background-size': '30%'});
-//                 $(".navbar-fixed-top .navbar-collapse").css({
-//                     "max-height": (window.screen.width - 54) + "px",
-//                     "overflow"  : "hidden"
-//                 });
-//                 $('#mobile-btn-list li').addClass('navbar-nav-mobile-li');
-//                 $("#mobile-btn-list").css("min-height", (window.screen.width - 54) + "px");
-//                 $("#mobile-btn-list").css("max-height", (window.screen.width - 54) + "px");
-//                 $(".navbar-bg").addClass("mobile-bg");
-//                 // console.info("11 横屏: ",window.screen.width,window.screen.height);
-//             } else {  //显示PC 按钮
-//                 $("#pc-btn-list").removeClass("hide-page");
-//                 $("#mobile-btn-list").addClass("hide-page");
-//                 //移除按钮花纹
-//                 $(".navbar-bg").removeClass("mobile-bg");
-//             }
-//         }
-//
-//         window.addEventListener('orientationchange', function (event) {
-//             if (window.orientation == 180 || window.orientation == 0) {
-//                 // alert("竖屏");
-//                 $('#mobile-btn-list li').removeClass('navbar-nav-mobile-li');
-//                 $('.mobile-bg').css({'background-size': '50%'});
-//                 $(".navbar-fixed-top .navbar-collapse").css({
-//                     "max-height": (window.screen.height - 54) + "px",
-//                     "overflow"  : "hidden"
-//                 });
-//                 $("#mobile-btn-list").css("min-height", (window.screen.height - 54) + "px");
-//                 $("#mobile-btn-list").css("max-height", (window.screen.height - 54) + "px");
-//             }
-//             if (window.orientation == 90 || window.orientation == -90) {
-//                 // alert("横屏");
-//                 $('#mobile-btn-list li').addClass('navbar-nav-mobile-li');
-//                 $('.mobile-bg').css({'background-size': '30%'});
-//                 $(".navbar-fixed-top .navbar-collapse").css({
-//                     "max-height": (window.screen.width - 54) + "px",
-//                     "overflow"  : "hidden"
-//                 });
-//                 $("#mobile-btn-list").css("min-height", (window.screen.width - 54) + "px");
-//                 $("#mobile-btn-list").css("max-height", (window.screen.width - 54) + "px");
-//                 // console.info("or 横屏: ",window.screen.height,window.screen.height);
-//             }
-//         });
-//     }
-// }
+function checkScreen() {
+    // console.info(window.innerWidth,window.innerHeight);
+
+    if (browser.iphone || browser.android) { //手机
+        $("#pc-btn-list").addClass("hide-page");
+        $("#mobile-btn-list").removeClass("hide-page");
+        //添加按钮花纹
+        $(".navbar-bg").addClass("mobile-bg");
+
+        if (window.innerWidth < window.innerHeight) {
+            // console.info("竖屏");
+            $('#mobile-btn-list li').removeClass('navbar-nav-mobile-li');
+            $(".navbar-fixed-top .navbar-collapse").css({
+                "max-height": (window.screen.height - 54) + "px",
+                "overflow"  : "hidden"
+            });
+            $("#mobile-btn-list").css("min-height", (window.screen.height - 54) + "px");
+            $("#mobile-btn-list").css("max-height", (window.screen.height - 54) + "px");
+            $(".navbar-bg").addClass("mobile-bg");
+        } else {
+            // console.info("横屏");
+            if (window.innerWidth < 768) {  //显示"汉堡包"按钮
+                $('.mobile-bg').css({'background-size': '30%'});
+                $(".navbar-fixed-top .navbar-collapse").css({
+                    "max-height": (window.screen.width - 54) + "px",
+                    "overflow"  : "hidden"
+                });
+                $('#mobile-btn-list li').addClass('navbar-nav-mobile-li');
+                $("#mobile-btn-list").css("min-height", (window.screen.width - 54) + "px");
+                $("#mobile-btn-list").css("max-height", (window.screen.width - 54) + "px");
+                $(".navbar-bg").addClass("mobile-bg");
+                // console.info("11 横屏: ",window.screen.width,window.screen.height);
+            } else {  //显示PC 按钮
+                $("#pc-btn-list").removeClass("hide-page");
+                $("#mobile-btn-list").addClass("hide-page");
+                //移除按钮花纹
+                $(".navbar-bg").removeClass("mobile-bg");
+            }
+        }
+
+        window.addEventListener('orientationchange', function (event) {
+            if (window.orientation == 180 || window.orientation == 0) {
+                // alert("竖屏");
+                $('#mobile-btn-list li').removeClass('navbar-nav-mobile-li');
+                $('.mobile-bg').css({'background-size': '50%'});
+                $(".navbar-fixed-top .navbar-collapse").css({
+                    "max-height": (window.screen.height - 54) + "px",
+                    "overflow"  : "hidden"
+                });
+                $("#mobile-btn-list").css("min-height", (window.screen.height - 54) + "px");
+                $("#mobile-btn-list").css("max-height", (window.screen.height - 54) + "px");
+            }
+            if (window.orientation == 90 || window.orientation == -90) {
+                // alert("横屏");
+                $('#mobile-btn-list li').addClass('navbar-nav-mobile-li');
+                $('.mobile-bg').css({'background-size': '30%'});
+                $(".navbar-fixed-top .navbar-collapse").css({
+                    "max-height": (window.screen.width - 54) + "px",
+                    "overflow"  : "hidden"
+                });
+                $("#mobile-btn-list").css("min-height", (window.screen.width - 54) + "px");
+                $("#mobile-btn-list").css("max-height", (window.screen.width - 54) + "px");
+                // console.info("or 横屏: ",window.screen.height,window.screen.height);
+            }
+        });
+    }
+}
 
 function initProjectView(e) {
     _viewE = e;

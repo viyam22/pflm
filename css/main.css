@@ -107,7 +107,6 @@ a:visited {
   padding-left: 14px;
 }
 .navbar .navbar-collapse {
-  border-bottom: solid 1px #ededed;
   border-color: transparent;
 }
 .navbar #pc-btn-list {
@@ -128,29 +127,29 @@ a:visited {
 .navbar-nav li > a {
   font-size: 16px;
   outline: none;
-  padding: 20px 17px;
+  padding: 20px 17px 0;
 }
 .navbar-nav li > a:hover:before {
   background-color: transparent;
   outline: none;
 }
-.navbar-nav li > a:hover:after,
-.navbar-nav li > a:focus:after,
-.navbar-nav li > a:active:after {
-  display: block;
-  content: '';
+.navbar-nav li > a > div {
   width: 8px;
   height: 8px;
   margin: 0 auto;
   margin-top: 6px;
-  background-color: #ea094b !important;
-  outline: none;
+  background-color: #ea094b;
+  display: none;
+}
+.navbar-nav li > a:hover > div,
+.navbar-nav li > a:focus > div,
+.navbar-nav li > a:active > div {
+  display: block;
 }
 .navbar-nav li :hover,
 .navbar-nav li :focus,
 .navbar-nav li :active {
   color: #ea094b !important;
-  background-color: transparent !important;
 }
 .navbar-nav li > a span {
   margin: 0 auto;
@@ -488,7 +487,7 @@ a:visited {
   position: relative;
   right: 0;
   box-sizing: border-box;
-  width: 25%;
+  width: 28%;
   height: 100%;
   z-index: 2;
   float: right;
@@ -496,7 +495,7 @@ a:visited {
 .project-detail {
   position: relative;
   box-sizing: border-box;
-  max-width: 75%;
+  max-width: 72%;
   width: 75%;
   word-wrap: break-word;
   z-index: 1;
@@ -559,6 +558,7 @@ a:visited {
 }
 .project-logo {
   width: 128px;
+  margin-bottom: 10px;
 }
 .project-title {
   text-align: justify;
@@ -583,7 +583,7 @@ a:visited {
   font-size: 16px;
 }
 .project-block h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 .project-block span {
@@ -640,6 +640,7 @@ a:visited {
 }
 .recruit-title-s {
   display: none;
+  text-align: justify;
 }
 .recruit ul {
   width: 100%;
@@ -648,7 +649,6 @@ a:visited {
 }
 .recruit ul > li {
   border-bottom: 0.1px #3f3f3f solid;
-  padding-bottom: 20px;
   position: relative;
   list-style-type: none;
   border-radius: 0;
@@ -702,6 +702,9 @@ a:visited {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.recruit-content {
+  padding-bottom: 15px;
+}
 .recruit-content > div {
   padding-top: 18px;
 }
@@ -740,12 +743,20 @@ a:visited {
 .footer-content {
   padding: 0 20px;
 }
+.footer-pflm,
+.footer-pflm:hover,
+.footer-pflm:link,
+.footer-pflm:active,
+.footer-pflm:visited {
+  color: #c1c1c1;
+  cursor: pointer;
+}
 .footer-content a,
 .footer-content a:hover,
 .footer-content a:link,
 .footer-content a:active,
 .footer-content a:visited {
-  color: #c1c1c1;
+  color: #fff;
   cursor: pointer;
 }
 .footer-pflm:hover,
@@ -1002,6 +1013,7 @@ a:visited {
 .who-content-s {
   display: none;
   padding: 25px 35px 0;
+  text-align: justify;
 }
 .who-bg img {
   margin: 0 auto;
@@ -1129,7 +1141,7 @@ a:visited {
   transition: all 0.5s ease-in-out;
 }
 .service-container-s {
-  padding: 0 30px;
+  padding-left: 15px;
   color: #3f3f3f;
 }
 .service-container-s > .container {
@@ -1205,6 +1217,23 @@ a:visited {
 /*********
 *************** 媒体查询 start ***************
 *************/
+@media (max-width: 1399px) {
+  .project-overlay h1 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1249px) {
+  .project-overlay h1 {
+    font-size: 20px;
+  }
+  .overlay-text {
+    font-size: 12px;
+    height: 36px;
+    width: 140px;
+    margin-top: 32%;
+    padding: 7px 20px;
+  }
+}
 @media (max-width: 1199px) {
   .jumbotron {
     padding-top: 236px;
@@ -1220,15 +1249,8 @@ a:visited {
     height: 16px;
   }
   .project-overlay h1 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 20%;
-  }
-  .overlay-text {
-    font-size: 12px;
-    height: 36px;
-    width: 140px;
-    margin-top: 32%;
-    padding: 7px 20px;
   }
   .more-btn-overlay {
     font-size: 12px;
@@ -1260,7 +1282,7 @@ a:visited {
     font-size: 14px;
   }
   .project-block h4 {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 @media (max-width: 991px) {
@@ -1501,6 +1523,9 @@ a:visited {
   .recruit ul > li {
     padding: 10px 0;
   }
+  .recruit-a {
+    padding: 0;
+  }
   .project-overlay h1 {
     font-size: 18px;
     margin-top: 27%;
@@ -1582,7 +1607,10 @@ a:visited {
     display: block;
   }
   .footer {
-    background-image: url('../img/footer_bg-s.jpg');
+    background-image: none;
+  }
+  .footer-bg {
+    background-image: url('../img/footer_bg_s.png');
   }
   .end-content {
     display: none;
@@ -1612,10 +1640,10 @@ a:visited {
     display: block;
   }
   .service-name-s > img {
-    width: 25%;
+    width: 22%;
     position: absolute;
     top: -4px;
-    left: -8%;
+    left: -5%;
   }
   .mobile-bg {
     background-image: url('../img/button_bg.png');

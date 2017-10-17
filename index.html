@@ -16,6 +16,21 @@
     <link href="css/main.css" rel="stylesheet">
     <!--<script src="js/vconsole.min.js"></script>-->
 
+    <!-- 腾讯统计代码 start -->
+    <script>
+    var _mtac = {};
+    (function() {
+        var mta = document.createElement("script");
+        mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "500535726");
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+    })();
+    </script>
+
+    <!-- 腾讯统计代码 end -->
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!-- [if lt IE 9]> -->
@@ -36,7 +51,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="">
+            <a class="navbar-brand" href="index.html">
                 <img alt='Brand' src="svg/logo.svg">
             </a>
         </div>
@@ -45,25 +60,37 @@
         <nav id="rock-navigation" class="navbar-bg mobile-bg nav navbar-collapse collapse" role="navigation" >
             <ul id='pc-btn-list' class="nav navbar-nav navbar-right text-uppercase">
                   <li>
-                      <a class="smoothScroll" href="#projects">作 品
-                      </a>
+                      <a class="smoothScroll navBtn" href="#projects">作 品
+                      <div></div></a>
                   </li>
                   <li>
-                      <a class="smoothScroll" href="#partner">伙 伴</a>
+                      <a class="smoothScroll navBtn" href="#partner">伙 伴<div></div></a>
                   </li>
-                  <li><a class="smoothScroll" href="#service">服 务</a></li>
-                  <li><a class="smoothScroll" href="#who">我 们</a></li>
-                  <li><a class="smoothScroll" href="#recruit">加 入</a></li>
-                  <li><a class="smoothScroll" href="#footer">联 系</a></li>
+                  <li><a class="smoothScroll navBtn" href="#service">服 务<div></div></a></li>
+                  <li><a class="smoothScroll navBtn" href="#who">我 们<div></div></a></li>
+                  <li><a class="smoothScroll navBtn" href="#recruit">加 入<div></div></a></li>
+                  <li><a class="smoothScroll navBtn" href="#footer">联 系<div></div></a></li>
               </ul>
 
             <ul id="mobile-btn-list" class="nav navbar-nav-mobile navbar-right main-navigation text-uppercase">
-                <li><a class="smoothScroll navbar-item col-sm-6" href="#projects"><span>OUR WORKS</span></br>作 品</a></li>
-                <li><a class="smoothScroll navbar-item col-sm-6" href="#partner"><span>OUR PARTNER</span></br>伙 伴</a></li>
-                <li><a class="smoothScroll navbar-item col-sm-6" href="#service"><span>OUR SERVICE</span></br>服 务</a></li>
-                <li><a class="smoothScroll navbar-item col-sm-6" href="#who"><span>ABOUT US</span></br>我 们</a></li>
-                <li><a class="smoothScroll navbar-item col-sm-6" href="#recruit"><span>JOIN US</span></br>加 入</a></li>
-                <li><a class="smoothScroll navbar-item col-sm-6" href="#footer"><span>CONTACT US</span></br>联 系</a></li>
+                <li>
+                    <a class="smoothScroll navbar-item col-sm-6" href="#projects" id="projectsNav"><span>OUR WORKS</span></br>作 品</a>
+                </li>
+                <li>
+                    <a class="smoothScroll navbar-item col-sm-6" href="#partner" id="partnerNav"><span>OUR PARTNER</span></br>伙 伴</a>
+                </li>
+                <li>
+                    <a class="smoothScroll navbar-item col-sm-6" href="#service" id="serviceNav"><span>OUR SERVICE</span></br>服 务</a>
+                </li>
+                <li>
+                    <a class="smoothScroll navbar-item col-sm-6" href="#who" id="whoNav"><span>ABOUT US</span></br>我 们</a>
+                </li>
+                <li>
+                    <a class="smoothScroll navbar-item col-sm-6" href="#recruit" id="recruitNav"><span>JOIN US</span></br>加 入</a>
+                </li>
+                <li>
+                    <a class="smoothScroll navbar-item col-sm-6" href="#footer" id="footerNav"><span>CONTACT US</span></br>联 系</a>
+                </li>
                 </ul>
         </nav>
     </div>
@@ -99,13 +126,13 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h1>我们的作品<span></span></h1>
-                <h2>创作，只为志同道合的卓越品牌。</h2>
+                <h2>创作&nbsp&nbsp只为志同道合的卓越品牌</h2>
             </div>
         </div>
     </div>
     <div id="project-container" class="project-container container">
         <div class="row">
-            <div id='project-con1' class="project-con col-md-3 col-sm-4 col-xs-6">
+            <!-- <div id='project-con12' class="project-con col-md-3 col-sm-4 col-xs-6">
                  <div class="project-wrapper">
                      <img src="img/projects/project1.jpg"></div>
                  <div class="project-overlay">
@@ -114,124 +141,14 @@
                          <div class="overlay-text">VIEW ></div>
                      </a>
                  </div>
-             </div>
-            <div id='project-con2' class="project-con col-md-3 col-sm-4 col-xs-6">
-                 <div class="project-wrapper">
-                     <img src="img/projects/project1.jpg"></div>
-                 <div class="project-overlay">
-                     <a>
-                         <h1></h1>
-                         <div class="overlay-text">VIEW ></div>
-                     </a>
-                 </div>
-             </div>
-            <div id='project-con3' class="project-con col-md-3 col-sm-4 col-xs-6">
-                 <div class="project-wrapper">
-                     <img src="img/projects/project1.jpg"></div>
-                 <div class="project-overlay">
-                     <a>
-                         <h1></h1>
-                         <div class="overlay-text">VIEW ></div>
-                     </a>
-                 </div>
-             </div>
-            <div id='project-con4' class="project-con col-md-3 col-sm-4 col-xs-6">
-                 <div class="project-wrapper">
-                     <img src="img/projects/project1.jpg"></div>
-                 <div class="project-overlay">
-                     <a>
-                         <h1></h1>
-                         <div class="overlay-text">VIEW ></div>
-                     </a>
-                 </div>
-             </div>
-            <div id='project-con5' class="project-con col-md-3 col-sm-4 col-xs-6">
-                 <div class="project-wrapper">
-                     <img src="img/projects/project1.jpg"></div>
-                 <div class="project-overlay">
-                     <a>
-                         <h1></h1>
-                         <div class="overlay-text">VIEW ></div>
-                     </a>
-                 </div>
-             </div>
-            <div id='project-con6' class="project-con col-md-3 col-sm-4 col-xs-6">
-                 <div class="project-wrapper">
-                     <img src="img/projects/project1.jpg"></div>
-                 <div class="project-overlay">
-                     <a>
-                         <h1></h1>
-                         <div class="overlay-text">VIEW ></div>
-                     </a>
-                 </div>
-             </div>
-            <div id='project-con7' class="project-con col-md-3 col-sm-4 col-xs-6">
-                 <div class="project-wrapper">
-                     <img src="img/projects/project1.jpg"></div>
-                 <div class="project-overlay">
-                     <a>
-                         <h1></h1>
-                         <div class="overlay-text">VIEW ></div>
-                     </a>
-                 </div>
-             </div>
-            <div id='project-con8' class="project-con col-md-3 col-sm-4 col-xs-6">
-                 <div class="project-wrapper">
-                     <img src="img/projects/project1.jpg"></div>
-                 <div class="project-overlay">
-                     <a>
-                         <h1></h1>
-                         <div class="overlay-text">VIEW ></div>
-                     </a>
-                 </div>
-             </div>
-            <div id='project-con9' class="project-con col-md-3 col-sm-4 col-xs-6">
-                 <div class="project-wrapper">
-                     <img src="img/projects/project1.jpg"></div>
-                 <div class="project-overlay">
-                     <a>
-                         <h1></h1>
-                         <div class="overlay-text">VIEW ></div>
-                     </a>
-                 </div>
-             </div>
-            <div id='project-con10' class="project-con col-md-3 col-sm-4 col-xs-6">
-                 <div class="project-wrapper">
-                     <img src="img/projects/project1.jpg"></div>
-                 <div class="project-overlay">
-                     <a>
-                         <h1></h1>
-                         <div class="overlay-text">VIEW ></div>
-                     </a>
-                 </div>
-             </div>
-            <div id='project-con11' class="project-con col-md-3 col-sm-4 col-xs-6">
-                 <div class="project-wrapper">
-                     <img src="img/projects/project1.jpg"></div>
-                 <div class="project-overlay">
-                     <a>
-                         <h1></h1>
-                         <div class="overlay-text">VIEW ></div>
-                     </a>
-                 </div>
-             </div>
-            <div id='project-con12' class="project-con col-md-3 col-sm-4 col-xs-6">
-                 <div class="project-wrapper">
-                     <img src="img/projects/project1.jpg"></div>
-                 <div class="project-overlay">
-                     <a>
-                         <h1></h1>
-                         <div class="overlay-text">VIEW ></div>
-                     </a>
-                 </div>
-             </div>
+             </div> -->
         </div>
     </div>
-    <div class="more-project-container container hide-page">
+    <div class="more-project-container container" id="projectsMore">
         <div class="row">
             <h1 class="more-project-txt col-md-12 col-sm-12 col-xs-12">欲罢不能？我们还有……</h1>
             <a class="more-project-btn col-md-12 col-sm-12 col-xs-12">
-                <div class="more-btn-overlay">VIEW MORE
+                <div class="more-btn-overlay" id="projectsMoreBtn">VIEW MORE
                     <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                 </div>
             </a>
@@ -312,7 +229,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h1>我们的伙伴<span></span></h1>
-                <h2>最好的关系是“因信而择”。</h2>
+                <h2>最好的关系是“因信而择”</h2>
             </div>
         </div>
     </div>
@@ -330,14 +247,14 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h1>我们的服务<span></span></h1>
-                <h2>专注，全为您所需。</h2>
+                <h2>专注&nbsp&nbsp全为您所需</h2>
             </div>
         </div>
     </div>
-    <div class="service-container visible-lg-blcok visible-md-block hidden-sm hidden-xs">
+    <div class="service-container visible-lg-block visible-md-block hidden-sm hidden-xs">
         <div class="service-box">
             <div class="service-unchecked">
-                <img src="img/service_b1.png">
+                <img src="img/service_b1.jpg">
                 <div class="service-name">
                     <img src="img/service_icon1.png">
                     <div>品牌创意</div>
@@ -360,7 +277,7 @@
         </div>
         <div class="service-box">
             <div class="service-unchecked">
-                <img src="img/service_b2.png">
+                <img src="img/service_b2.jpg">
                 <div class="service-name">
                     <img src="img/service_icon2.png">
                     <div>社会化营销</div>
@@ -383,7 +300,7 @@
         </div>
         <div class="service-box">
             <div class="service-unchecked">
-                <img src="img/service_b3.png">
+                <img src="img/service_b3.jpg">
                 <div class="service-name">
                     <img src="img/service_icon3.png">
                     <div>线下营销</div>
@@ -405,7 +322,7 @@
         </div>
         <div class="service-box">
             <div class="service-unchecked">
-                <img src="img/service_b4.png">
+                <img src="img/service_b4.jpg">
                 <div class="service-name">
                     <img src="img/service_icon4.png">
                     <div>媒介合作</div>
@@ -428,7 +345,7 @@
         </div>
         <div class="service-box">
             <div class="service-unchecked">
-                <img src="img/service_b5.png">
+                <img src="img/service_b5.jpg">
                 <div class="service-name">
                     <img src="img/service_icon5.png">
                     <div>数字互动</div>
@@ -451,7 +368,7 @@
         </div>
         <div class="service-box">
             <div class="service-unchecked">
-                <img src="img/service_b6.png">
+                <img src="img/service_b6.jpg">
                 <div class="service-name">
                     <img src="img/service_icon6.png">
                     <div>IP创意</div>
@@ -672,17 +589,17 @@
                         <div class="footer-contact-title"><span class="ft-red">CONTACT US</span> 联系我们</div>
                         <div class="footer-contact-content">
                             <div class="footer-contact-name">深圳普方立民总部</div>
-                            <div class="footer-contact-phome">0755-2531 2462</div>
+                            <a href="tel:0755-25312462" class="footer-contact-phome">0755-2531 2462</a>
                             <div class="footer-contact-address">深圳市南山区桃源街道留仙大道与塘岭路交汇处金骐智谷24楼2403室</div>
                         </div>
                         <div class="footer-contact-content">
                             <div class="footer-contact-name">普方立民广州分公司</div>
-                            <div class="footer-contact-phome">020-8765 7456</div>
+                            <a href="tel:020-87657456" class="footer-contact-phome">020-8765 7456</a>
                             <div class="footer-contact-address">广州市天河区林和西路157号保利中汇广场A栋3001\3010\3011\3012</div>
                         </div>
                         <div class="footer-contact-content">
                             <div class="footer-contact-name">普方立民杭州分公司</div>
-                            <div class="footer-contact-phome">0755-2531 2462</div>
+                            <a href="tel:0755-25312462" class="footer-contact-phome">0755-2531 2462</a>
                             <div class="footer-contact-address">杭州市上城区中河中路168号浙江国贸大厦1617</div>
                         </div>
                     </div>
@@ -728,5 +645,97 @@
 <!--<script src="js/asyAjax.js"></script>-->
 <script src="js/main.js"></script>
 <script src="js/index.js"></script>
+
+<script>
+    var shareDatas = {
+        imgUrl     : 'http://creative.pflm.cn/img/share_img.jpg',
+        lineLink   : 'http://creative.pflm.cn/',
+        descContent: '了解创意 更了解品牌心意',
+        shareTitle : '普方创意中心'
+    };
+
+    if (typeof shareDatas == 'object') {
+        var ua = window.navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+            if (shareDatas.notShare) {
+                function onBridgeReady() {
+                    WeixinJSBridge.call('hideOptionMenu')
+                }
+                if (typeof WeixinJSBridge == 'undefined') {
+                    if (document.addEventListener) {
+                        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false)
+                    } else if (document.attachEvent) {
+                        document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                        document.attachEvent('onWeixinJSBridgeReady', onBridgeReady)
+                    }
+                } else {
+                    onBridgeReady()
+                }
+            } else if (typeof wx == 'object') {
+                wx.config({
+                    debug: false,
+                    appId: share_sign.appId,
+                    timestamp: share_sign.timestamp,
+                    nonceStr: share_sign.nonceStr,
+                    signature: share_sign.signature,
+                    jsApiList: ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo']
+                });
+                wx.ready(function() {
+                    var imgUrl = shareDatas.imgUrl;
+                    var lineLink = shareDatas.lineLink;
+                    var descContent = shareDatas.descContent;
+                    var shareTitle = shareDatas.shareTitle;
+                    //好友
+                    wx.onMenuShareAppMessage({
+                        title: shareTitle,
+                        desc: descContent,
+                        link: lineLink,
+                        imgUrl: imgUrl,
+                        type: '',
+                        dataUrl: '',
+                        success: function(res) {
+                         // console.info("转发好友 OK!");
+                            ELEID.$popup.animate({ top: '-200%' }, 'slow')
+                            MtaH5.clickStat("sharetofri")
+                        },
+                        cancel: function() {}
+                    });
+
+                    //朋友圈
+                    wx.onMenuShareTimeline({
+                        title: shareTitle,
+                        link: lineLink,
+                        imgUrl: imgUrl,
+                        success: function() {
+                         // console.info("转发朋友圈 OK!");
+                            ELEID.$popup.animate({ top: '-200%' }, 'slow')
+                            MtaH5.clickStat("sharetomoments")
+                        },
+                        cancel: function() {}
+                    });
+                    wx.onMenuShareQQ({
+                        title: shareTitle,
+                        desc: descContent,
+                        link: lineLink,
+                        imgUrl: imgUrl,
+                        success: function() {},
+                        cancel: function() {}
+                    });
+                    wx.onMenuShareWeibo({
+                        title: shareTitle,
+                        desc: descContent,
+                        link: lineLink,
+                        imgUrl: imgUrl,
+                        success: function() {},
+                        cancel: function() {}
+                    });
+                });
+            }
+        }
+    }
+
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript" src="http://s-api.pflm.cn/sys/js.share?gh=gh_cf3603d36721"></script>
 </body>
 </html>

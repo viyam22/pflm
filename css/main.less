@@ -61,9 +61,7 @@ a, a:hover, a:link, a:active, a:visited {
     padding-left: 14px;
   }
   .navbar-collapse {
-    //float: right;
-    //background-color: #fff;
-    border-bottom: solid 1px #ededed;
+    // border-bottom: solid 1px #ededed;
     border-color: transparent;
   }
 
@@ -87,31 +85,31 @@ a, a:hover, a:link, a:active, a:visited {
   font-size: 16px;
   outline: none;
   //text-decoration: none;
-  padding: 20px 17px;
+  padding: 20px 17px 0;
 }
 
 .navbar-nav li > a:hover:before {
   background-color: transparent;
   outline: none;
-  //text-decoration: none;
 }
 
-.navbar-nav li > a:hover:after, .navbar-nav li > a:focus:after, .navbar-nav li > a:active:after {
-  display: block;
-  content: '';
+.navbar-nav li > a > div {
   width: 8px;
   height: 8px;
   margin: 0 auto;
   margin-top: 6px;
-  background-color: #ea094b !important;
-  outline: none;
-  //text-decoration: none;
+  background-color: #ea094b;
+  display: none;
+}
+
+.navbar-nav li > a:hover > div, .navbar-nav li > a:focus > div, .navbar-nav li > a:active > div {
+  display: block;
 }
 
 .navbar-nav li :hover, .navbar-nav li :focus, .navbar-nav li :active {
   color: #ea094b !important;
   //color: blue !important;
-  background-color: transparent !important;
+  // background-color: transparent !important;
 }
 
 .navbar-nav li > a span {
@@ -483,7 +481,7 @@ a, a:hover, a:link, a:active, a:visited {
   position: relative;
   right: 0;
   box-sizing: border-box;
-  width: 25%;
+  width: 28%;
   height: 100%;
   z-index: 2;
   //background-color: rgba(0,0,0,0.3);
@@ -496,7 +494,7 @@ a, a:hover, a:link, a:active, a:visited {
   box-sizing: border-box;
   //margin-right: 320px;
   //margin-right: 25%;
-  max-width: 75%;
+  max-width: 72%;
   width: 75%;
   word-wrap: break-word;
   z-index: 1;
@@ -557,6 +555,7 @@ a, a:hover, a:link, a:active, a:visited {
 
 .project-logo {
   width: 128px;
+  margin-bottom: 10px;
   //height: 70px;
 }
 
@@ -588,7 +587,7 @@ a, a:hover, a:link, a:active, a:visited {
 }
 
 .project-block h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -651,6 +650,7 @@ a, a:hover, a:link, a:active, a:visited {
 
 .recruit-title-s {
   display: none;
+  text-align:justify;
 }
 
 .recruit ul {
@@ -661,7 +661,6 @@ a, a:hover, a:link, a:active, a:visited {
 
 .recruit ul > li {
   border-bottom: 0.1px #3f3f3f solid;
-  padding-bottom: 20px;
   position: relative;
   list-style-type: none;
   border-radius: 0;
@@ -712,6 +711,10 @@ a, a:hover, a:link, a:active, a:visited {
   .transition(all 0.3s ease-in-out);
 }
 
+.recruit-content {
+  padding-bottom: 15px;
+}
+
 .recruit-content > div {
   padding-top: 18px;
 }
@@ -757,8 +760,13 @@ a, a:hover, a:link, a:active, a:visited {
   padding: 0 20px;
 }
 
-.footer-content a, .footer-content a:hover, .footer-content a:link, .footer-content a:active, .footer-content a:visited {
+.footer-pflm, .footer-pflm:hover, .footer-pflm:link, .footer-pflm:active, .footer-pflm:visited {
   color: #c1c1c1;
+  cursor: pointer;
+}
+
+.footer-content a, .footer-content a:hover, .footer-content a:link, .footer-content a:active, .footer-content a:visited {
+  color: #fff;
   cursor: pointer;
 }
 
@@ -1047,6 +1055,7 @@ a, a:hover, a:link, a:active, a:visited {
 .who-content-s {
   display: none;
   padding: 25px 35px 0;
+  text-align:justify;
 }
 
 .who-bg img {
@@ -1172,7 +1181,7 @@ a, a:hover, a:link, a:active, a:visited {
 }
 
 .service-container-s {
-  padding: 0 30px;
+  padding-left: 15px;
   color: #3f3f3f;
 }
 
@@ -1265,6 +1274,32 @@ a, a:hover, a:link, a:active, a:visited {
 /*********
 *************** 媒体查询 start ***************
 *************/
+@media (max-width: 1399px) {
+  .project-overlay h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1249px) {
+  .project-overlay h1 {
+    font-size: 20px;
+  }
+
+  .overlay-text {
+    font-size: 12px;
+    height: 36px;
+    width: 140px;
+    margin-top: 32%;
+    padding: 7px 20px;
+  }
+}
+
+// @media (max-width: 1249px) {
+//   .project-overlay h1 {
+//     font-size: 18px;
+//   }
+// }
+
 @media (max-width: 1199px) {
   .jumbotron {
     padding-top: 236px;
@@ -1283,16 +1318,8 @@ a, a:hover, a:link, a:active, a:visited {
   }
 
   .project-overlay h1 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 20%;
-  }
-
-  .overlay-text {
-    font-size: 12px;
-    height: 36px;
-    width: 140px;
-    margin-top: 32%;
-    padding: 7px 20px;
   }
 
   .more-btn-overlay {
@@ -1331,7 +1358,7 @@ a, a:hover, a:link, a:active, a:visited {
   }
 
   .project-block h4 {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -1626,6 +1653,10 @@ a, a:hover, a:link, a:active, a:visited {
     padding: 10px 0;
   }
 
+  .recruit-a {
+    padding: 0;
+  }
+
   .project-overlay h1 {
     font-size: 18px;
     margin-top: 27%;
@@ -1717,7 +1748,11 @@ a, a:hover, a:link, a:active, a:visited {
   }
 
   .footer {
-    background-image: url('../img/footer_bg-s.jpg');
+    background-image: none;
+  }
+
+  .footer-bg {
+    background-image: url('../img/footer_bg_s.png');
   }
 
   .end-content {
@@ -1754,10 +1789,10 @@ a, a:hover, a:link, a:active, a:visited {
     }
   }
   .service-name-s > img {
-    width: 25%;
+    width: 22%;
     position: absolute;
     top: -4px;
-    left: -8%;
+    left: -5%;
   }
   .mobile-bg {
     background-image: url('../img/button_bg.png');

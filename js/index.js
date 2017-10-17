@@ -112,9 +112,36 @@ var recruitData={
 $(document).ready(function () {
     $('#collapse-recruit').collapse()
     checkScreen()
+    resizeWindow()
     initRecruit(recruitData)
+    menuScoll()
 });
 
+function resizeWindow() {
+    window.onresize = function () {
+        var res;
+        if (res) {
+            clearTimeout(res)
+        } else {
+            res = setTimeout(function (e) {
+                // console.info 
+
+        ("resize=  ", window.innerWidth);
+                if (window.innerWidth < 768) {  //显示"汉堡包"按钮
+                    $(".navbar-bg").addClass("mobile-bg");
+                    $(".navbar-fixed-top .navbar-collapse").css({
+                        "max-height": (window.screen.height - 54) + "px",
+                        "overflow"  : "hidden"
+                    });
+                    menuScoll();
+                } else {  //显示PC 按钮
+                    //移除按钮花纹
+                    $(".navbar-bg").removeClass("mobile-bg");
+                }
+            }, 20);
+        }
+    };
+}
 
 function checkScreen() {
     // console.info(window.innerWidth,window.innerHeight);
@@ -225,7 +252,7 @@ function initRecruit(data) {
         for (var req = 0, len = _requiremen.length; req < len; req++) {
             reqText += '<li>' + _requiremen[req] + '</li>'
         }
-        text += '<li class="panel recruit-panel">' +
+        text += '<li class="panel recruit-panel" id="recruitPanel' + i + '">' +
             '<a class="recruit-a" data-toggle="collapse" data-parent="#collapse-recruit" href="#recruit' + i + '" data-isopen="false">' +
             '<span class="recruit-type module-content-title">' + _data[i].post + '</span>' +
             '<div class="recruit-introduce">部门：' + _data[i].department + ' | 招聘人数：' + _data[i].number + '人</div>' +
@@ -234,20 +261,11 @@ function initRecruit(data) {
             '<div class="recruit-content panel-collapse collapse" id="recruit' + i + '">' +
             '<div>职位描述：</div>' +
             '<ol>' +
-            // '<li>负责快消、3C等行业大客户的互联网整合传播服务。制定品牌数字整合营销策划推广全案；</li>' +
-            // '<li>负责为客户提供企业品牌整体策划、市场营销整体策划、网络整合营销推广活动等相关策划方案；</li>' +
-            // '<li>配合产品营销及渠道营销，负责新媒体营销、精准营销等互联网营销策划、执行及评估；</li>' +
-            // '<li>营销活动主题创作、热点事件创意与策划；</li>' +
             desText +
             '</ol>' +
 
             '<div>任职资格：</div>' +
             '<ol>' +
-            // '<li>大学本科及以上学历，所学专业不限；</li>' +
-            // '<li>具备营销公司全案策划经验，网络营销策划经验，熟悉各种方案的撰写；</li>' +
-            // '<li>了解互联网推广手段，对精准营销、搜索营销、社交媒体营销等有深刻的理解和认识；</li>' +
-            // '<li>清晰的逻辑思辨能力、良好的数据与竞争对手分析能力、具备高水平的创意能力，创意设计有自己的观点和建议能力；</li>' +
-            // '<li>公关/广告/传媒/互联网营销公司3年以上策划工作经验，具有家电、快消、3C行业服务经验者优先；</li>' +
             reqText +
             '</ol>' +
             '</div>' +

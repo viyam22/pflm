@@ -15,17 +15,17 @@ var projectListData = {
         },
         {
             "id"    : "project3",
-            "title" : "天翼请了苏轼唱RAP，就为了让你多打电话",
+            "title" : "天翼请了苏轼来唱RAP",
             "imgUrl": "img/projects/project3_a.jpg"
         },
         {
             "id"    : "project4",
-            "title" : "如今家电也不淡定，跨界就玩古典艺术",
+            "title" : "家电跨界，来一场演奏会",
             "imgUrl": "img/projects/project4_a.jpg"
         },
         {
             "id"    : "project5",
-            "title" : "海信悦享博物馆，献给悦享视界的你",
+            "title" : "献给你的悦享博物馆",
             "imgUrl": "img/projects/project5_a.jpg"
         },
         {
@@ -35,52 +35,52 @@ var projectListData = {
         },
         {
             "id"    : "project7",
-            "title" : "每个重大节日，创维对你不离不弃",
+            "title" : "每个重大节日都有创维在身边",
             "imgUrl": "img/projects/project7_a.jpg"
         },
         {
             "id"    : "project8",
-            "title" : "这故事的脑洞有毒，特别是第二个",
+            "title" : "这套系列故事的脑洞有毒",
             "imgUrl": "img/projects/project8_a.jpg"
         },
         {
             "id"    : "project9",
-            "title" : "面对一成不变的生活，活出了自己的璀璨",
+            "title" : "活出自己的璀璨",
             "imgUrl": "img/projects/project9_a.jpg"
         },
         {
             "id"    : "project10",
-            "title" : "茶餐厅里的CP党，你猜是谁跟谁？",
+            "title" : "茶餐厅里有CP党出没",
             "imgUrl": "img/projects/project10_a.jpg"
         },
         {
             "id"    : "project11",
-            "title" : "对付网络“水军”最好的办法是什么？",
+            "title" : "人人都是公关经理",
             "imgUrl": "img/projects/project11_a.jpg"
         },
         {
             "id"    : "project12",
-            "title" : "能把智能生态博览会办成这样也没谁了！",
+            "title" : "7月琶洲星光闪闪",
             "imgUrl": "img/projects/project12_a.jpg"
         },
         {
             "id"    : "project13",
-            "title" : "一份最具匠心的缘来•上上签",
+            "title" : "来抽一支上上签",
             "imgUrl": "img/projects/project13_a.jpg"
         },
         {
             "id"    : "project14",
-            "title" : "这份海报合集，堪称运营商界的杜蕾斯",
+            "title" : "品牌符号创意最溜在这里",
             "imgUrl": "img/projects/project14_a.jpg"
         },
         {
             "id"    : "project15",
-            "title" : "创维国足官方赞助商，够霸气，才得胜",
+            "title" : "赞助国足要够霸气才得胜",
             "imgUrl": "img/projects/project15_a.jpg"
         },
         {
             "id"    : "project16",
-            "title" : "据说平均每5个人就有1人是……",
+            "title" : "点击查看你的五人关系",
             "imgUrl": "img/projects/project16_a.jpg"
         }
     ]
@@ -132,7 +132,7 @@ var projectViewData = {
         },
         {
             "id"         : "project3",
-            "title"      : "天翼请了苏轼唱RAP，就为了让你多打电话",
+            "title"      : "天翼请了苏轼来唱RAP",
             "projectType": "数字互动 社会化营销 H5 视频",
             "trade"      : "通信业",
             "client"     : "广东电信",
@@ -149,7 +149,7 @@ var projectViewData = {
         },
         {
             "id"         : "project4",
-            "title"      : "如今家电也不淡定，跨界就玩古典艺术",
+            "title"      : "家电跨界，来一场演奏会",
             "projectType": "数字互动 社会化营销 H5",
             "trade"      : "家电",
             "client"     : "海信集团",
@@ -169,7 +169,7 @@ var projectViewData = {
         },
         {
             "id"         : "project5",
-            "title"      : "海信悦享博物馆，献给悦享视界的你",
+            "title"      : "献给你的悦享博物馆",
             "projectType": "社会化营销",
             "trade"      : "家电",
             "client"     : "海信集团",
@@ -205,7 +205,7 @@ var projectViewData = {
         },
         {
             "id"         : "project7",
-            "title"      : "每个重大节日，创维对你不离不弃",
+            "title"      : "每个重大节日都有创维在身边",
             "projectType": "社会化营销 品牌创意",
             "trade"      : "家电",
             "client"     : "创维电视",
@@ -228,7 +228,7 @@ var projectViewData = {
         },
         {
             "id"         : "project8",
-            "title"      : "这故事的脑洞有毒，特别是第二个！",
+            "title"      : "这套系列故事的脑洞有毒！",
             "projectType": "品牌创意 社会化营销 视频",
             "trade"      : "通信业",
             "client"     : "广东电信",
@@ -248,7 +248,7 @@ var projectViewData = {
         },
         {
             "id"         : "project9",
-            "title"      : "面对一成不变的生活，活出了自己的璀璨 ",
+            "title"      : "活出自己的璀璨",
             "projectType": "社会化营销 IP创意 H5",
             "trade"      : "家电",
             "client"     : "海信集团",
@@ -268,7 +268,7 @@ var projectViewData = {
         },
         {
             "id"         : "project10",
-            "title"      : "茶餐厅里的CP党，你猜是谁跟谁？",
+            "title"      : "茶餐厅里有CP党出没",
             "projectType": "品牌创意 社会化营销 视频",
             "trade"      : "通信业",
             "client"     : "广东电信",
@@ -283,7 +283,7 @@ var projectViewData = {
         },
         {
             "id"         : "project11",
-            "title"      : "对付网络“水军”最好的办法是什么？",
+            "title"      : "人人都是公关经理",
             "projectType": "社会化营销 H5",
             "trade"      : "家电",
             "client"     : "海信集团",
@@ -301,7 +301,7 @@ var projectViewData = {
         },
         {
             "id"         : "project12",
-            "title"      : "能把智能生态博览会办成这样也没谁了！",
+            "title"      : "7月琶洲星光闪闪",
             "projectType": "线下营销 IP创意",
             "trade"      : "通信业",
             "client"     : "广东电信",
@@ -327,7 +327,7 @@ var projectViewData = {
         },
         {
             "id"         : "project13",
-            "title"      : "一份最具匠心的缘来·上上签",
+            "title"      : "来抽一支上上签",
             "projectType": "社会化营销 H5",
             "trade"      : "通信业",
             "client"     : "广州联通",
@@ -346,7 +346,7 @@ var projectViewData = {
         },
         {
             "id"         : "project14",
-            "title"      : "这份海报合集，堪称运营商界的杜蕾斯",
+            "title"      : "品牌符号创意最溜在这里",
             "projectType": "品牌创意 社会化营销",
             "trade"      : "通信业",
             "client"     : "广东电信",
@@ -368,7 +368,7 @@ var projectViewData = {
         },
         {
             "id"         : "project15",
-            "title"      : "创维国足官方赞助商，够霸气，才得胜",
+            "title"      : "赞助国足要够霸气才得胜",
             "projectType": "社会化营销 品牌创意",
             "trade"      : "家电",
             "client"     : "创维电视",
@@ -381,13 +381,12 @@ var projectViewData = {
                 "img/projects/project15_3.jpg",
                 "img/projects/project15_4.jpg",
                 "img/projects/project15_5.jpg",
-                "img/projects/project15_6.jpg",
-                "img/projects/project15_7.jpg"
+                "img/projects/project15_6.jpg"
             ]
         },
         {
             "id"         : "project16",
-            "title"      : "据说平均每5个人就有1人是……",
+            "title"      : "点击查看你的五人关系",
             "projectType": "社会化营销",
             "trade"      : "通信业",
             "client"     : "广东电信",
@@ -438,7 +437,20 @@ $(document).ready(function () {
     Math.random() > 0.5 ? $(".gif-img").addClass('gif-img1') : $(".gif-img").addClass('gif-img2')
     // ajaxSend(window.url_projectList, '', window.initProjectList);
 
-    window.initProjectList(projectListData)
+    window.initProjectList(projectListData, 'init')
+
+    /* 按钮点击 滑动切换 */
+    $root = $('html, body');
+    $('.smoothScroll').click(function () {
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 600, 'easeInOutExpo', function () {
+            // window.location.hash = href;
+        });
+        // console.info ("href=",href,"   offset().top=",$(href).offset().top);
+        return false;
+    });
 
     $('#navbar-more').click(function () {
         if ($("#navbar-more").hasClass('collapsed')) {
@@ -453,13 +465,24 @@ function stopFn(e) {
     e.preventDefault();
 };
 
-function initProjectList(e) {
+function initProjectList(e, type) {
+    var initProjectNum = 12;  //初始化项目数量
+
     if (e.code == 1) {
+        // 判断是否显示加载更多
+        if (e.data.length <= initProjectNum) {
+            $('#projectsMore').addClass('hide-page');
+        }
+
+        // 判断加载类型
+        var initI = type === 'init' ? 0 : initProjectNum;
+        var targetNum = type === 'init' ? initProjectNum : e.data.length;
+
         var projectListDivStr = '';
         // console.info(!isPc());
         if (browser.ipad || browser.android || browser.iphone) {  //移动端  ipad端
             //点击作品 view,跳转作品详情
-            for (var i = 0; i < e.data.length; i++) {
+            for (var i = initI; i < targetNum; i++) {
                 projectListDivStr +=
                     '<a id="projectBtn-' + e.data[i].id + '" class="project-con col-md-3 col-sm-6 col-xs-6">' +
                     '<div class="project-wrapper"> ' +
@@ -469,7 +492,7 @@ function initProjectList(e) {
             }
         } else {//PC端
             //点击作品  弹出黑色弹窗
-            for (var i = 0; i < e.data.length; i++) {
+            for (var i = initI; i < targetNum; i++) {
                 projectListDivStr +=
                     '<div class="project-con col-md-3 col-sm-6 col-xs-6">' +
                     '<div class="project-wrapper"> ' +
@@ -485,16 +508,31 @@ function initProjectList(e) {
                     '</div>'
             }
         }
-        $("#project-container .row").html(projectListDivStr);
-        initProjectBtn(e);
+        $("#project-container .row").append(projectListDivStr);
+        if (type === 'more') {
+            $('#projectsMore').addClass('hide-page');
+        }
+        initProjectBtn(e, initI, targetNum);
 
     } else {
         alert(e.msg);
     }
 }
+
+$('#projectsMoreBtn').click(function() {
+    initProjectList(projectListData, 'more')
+})
+
+
 if (urlObj.module != undefined) {
 
     hashId = "#" + urlObj.module;
+
+    // hash对应当前菜单按钮文字变红色
+    var menuBtnId = hashId + 'Nav';
+    $(menuBtnId).css({
+        color: '#ea094b'
+    })
 
     setTimeout(function (e) {
         $root.animate({
@@ -505,9 +543,9 @@ if (urlObj.module != undefined) {
     }, 600);
 }
 
-function initProjectBtn(e) {
+function initProjectBtn(e, initI, targetNum) {
     _listE = e;
-    for (var i = 0; i < _listE.data.length; i++) {
+    for (var i = initI; i < targetNum; i++) {
         (function (i) {
             $("#projectBtn-" + _listE.data[i].id).on("click", function (e) {
                 // console.info("按钮   id= " + _listE.data[i].id);
@@ -614,17 +652,44 @@ browser.android = (navigator.userAgent.match(/Android/i) != null || navigator.us
 
 // console.log("browser=   iPad iphone android mac  win ",browser.ipad,browser.iphone,browser.android,browser.mac,browser.win);
 
-if (browser.iphone || browser.ipad || browser.android || ((browser.win || browser.mac) && window.innerWidth < 768)) {
-    $('.main-navigation').onePageNav({
-        scrollThreshold: 01, // Adjust if Navigation highlights too early or too late
-        scrollOffset   : 52, //Height of Navigation Bar
-        filter         : ':not(.external)',
-        changeHash     : false
-    });
+function menuScoll() {
+    if (browser.iphone || browser.ipad || browser.android || ((browser.win || browser.mac) && window.innerWidth < 768)) {
+        $('.main-navigation').onePageNav({
+            scrollThreshold: 01, // Adjust if Navigation highlights too early or too late
+            scrollOffset   : 52, //Height of Navigation Bar
+            filter         : ':not(.external)',
+            changeHash     : false
+        });
 
-    $('.navbar-collapse a').click(function () {
-        $(".navbar-collapse").collapse('hide');
-        document.removeEventListener("touchmove", stopFn);
-    });
+        $('.navbar-collapse a').click(function () {
+            $(".navbar-collapse").collapse('hide');
+            document.removeEventListener("touchmove", stopFn);
+        });
+    }
 }
 
+// pc端导航按钮class
+$('.navBtn').on('click', function() {
+    $('.navBtn').css({
+        color: '#777'
+    })
+    $('.navBtn').children('div').css({
+        display: 'none'
+    })
+    $(this).css({
+        color: '#ea094b'
+    })
+    $(this).children('div').css({
+        display: 'block'
+    })
+})
+
+// 移动端导航按钮class
+$('.navbar-item').on('click', function() {
+    $('.navbar-item').css({
+        color: '#404041'
+    })
+    $(this).css({
+        color: '#ea094b'
+    })
+})
