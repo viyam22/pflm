@@ -36,8 +36,22 @@ a:visited {
   text-decoration: none !important;
   outline: none !important;
 }
+@font-face {
+  font-family: 'YaHeiLight';
+  src: url('../font/YaHeiLight_1.0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .hide-page {
   display: none !important;
+}
+.hide-more {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .row {
   margin: 0;
@@ -256,6 +270,7 @@ a:visited {
 #projects .project-container {
   margin: 0;
   width: 100%;
+  clear: both;
 }
 #projects .project-container .row {
   margin-right: -15px;
@@ -272,9 +287,20 @@ a:visited {
   font-size: 22px;
   line-height: 36px;
 }
+.module-content-box {
+  height: 50%;
+}
 .module-content .module-content-s {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 28px;
+}
+.service-container .module-content-s {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .module-title-container {
   min-height: 80px;
@@ -316,6 +342,12 @@ a:visited {
   display: inline-block;
   float: left;
   overflow: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.projects-con-visit {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .project-wrapper {
   overflow: hidden;
@@ -484,7 +516,6 @@ a:visited {
   background-color: #fff;
 }
 .project-slidebar {
-  position: relative;
   right: 0;
   box-sizing: border-box;
   width: 28%;
@@ -518,7 +549,6 @@ a:visited {
   float: left;
   line-height: normal;
   padding: 20px;
-  position: relative;
   width: 100%;
   z-index: 3;
   text-align: left;
@@ -546,16 +576,6 @@ a:visited {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.project-x-btn:hover img {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
 .project-logo {
   width: 128px;
   margin-bottom: 10px;
@@ -573,6 +593,35 @@ a:visited {
   font-weight: normal !important;
   line-height: 1.2;
 }
+.project-top-btn,
+.project-top-btn:link {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  border-radius: 8px;
+}
+.project-top-btn-fixed {
+  position: fixed;
+  bottom: 20px;
+}
+.project-top-btn-ab {
+  position: absolute;
+  bottom: 20px;
+}
+.project-block-top {
+  width: 86px;
+  float: right;
+  height: 86px;
+}
+.project-top-btn:hover,
+.project-top-btn:active,
+.project-top-btn:visited {
+  color: #3f3f3f;
+}
 .project-title {
   text-align: justify;
 }
@@ -586,7 +635,7 @@ a:visited {
   font-size: 16px;
   font-weight: bold;
 }
-.project-block span {
+.project-block h4 > span {
   color: #ea094b;
 }
 .project-block-no-border {
@@ -648,7 +697,7 @@ a:visited {
   padding: 0 20px;
 }
 .recruit ul > li {
-  border-bottom: 0.1px #3f3f3f solid;
+  border-bottom: 1px #3f3f3f solid;
   position: relative;
   list-style-type: none;
   border-radius: 0;
@@ -707,9 +756,6 @@ a:visited {
 }
 .recruit-content > div {
   padding-top: 18px;
-}
-.recruit-content > ol {
-  padding-left: 20px;
 }
 .recruit-content > ol > li {
   list-style-type: decimal;
@@ -1039,6 +1085,7 @@ a:visited {
   position: relative;
   float: left;
   overflow: hidden;
+  padding-bottom: 3%;
 }
 .service-box:before {
   content: "";
@@ -1067,9 +1114,6 @@ a:visited {
   display: block;
   margin: 0 auto;
   padding: 16% 0 8%;
-}
-.service-name > div {
-  padding-bottom: 13%;
 }
 .service-content {
   background-image: url('../img/service_elephant.png');
@@ -1264,6 +1308,10 @@ a:visited {
   }
   .module-title-container {
     padding-bottom: 50px;
+  }
+  .module-content .module-content-s {
+    font-size: 13px;
+    line-height: 22px;
   }
   .project-block {
     padding: 18px;
@@ -1516,9 +1564,6 @@ a:visited {
     display: block;
     padding: 42px 20px 20px;
     line-height: 25px;
-  }
-  .recruit-content > ol {
-    padding-left: 16px;
   }
   .recruit ul > li {
     padding: 10px 0;

@@ -24,8 +24,21 @@ a, a:hover, a:link, a:active, a:visited {
   outline: none !important;
 }
 
+@font-face {
+  font-family: 'YaHeiLight';
+
+  src:
+    url('../font/YaHeiLight_1.0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .hide-page {
   display: none !important;
+}
+.hide-more {
+  .opacity(0);
+  .transition(all 0.3s ease-in-out);
 }
 
 .row {
@@ -237,9 +250,10 @@ a, a:hover, a:link, a:active, a:visited {
   position: relative;
   z-index: 1;
   .project-container {
-    //padding: 0;
+    // padding: 0;
     margin: 0;
     width: 100%;
+    clear: both;
     .row {
       margin-right: -15px;
       margin-left: -15px;
@@ -253,7 +267,7 @@ a, a:hover, a:link, a:active, a:visited {
 
 .module-content {
   font-size: 18px;
-  line-height: 28px
+  line-height: 28px;
 }
 
 .module-content .module-content-title {
@@ -261,9 +275,20 @@ a, a:hover, a:link, a:active, a:visited {
   line-height: 36px;
 }
 
+.module-content-box {
+  height: 50%;
+}
+
 .module-content .module-content-s {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 28px;
+  
+}
+
+.service-container .module-content-s {
+  top: 50%;
+  position: relative;
+  .transform(translateY(-50%));
 }
 
 .module-title-container {
@@ -307,6 +332,11 @@ a, a:hover, a:link, a:active, a:visited {
   display: inline-block;
   float: left;
   overflow: hidden;
+  .opacity(0);
+  // .transition(all 0.3s ease-in-out);
+}
+.projects-con-visit {
+  .opacity(1);
 }
 
 .project-wrapper {
@@ -478,7 +508,6 @@ a, a:hover, a:link, a:active, a:visited {
 
 //右侧 固定区域
 .project-slidebar {
-  position: relative;
   right: 0;
   box-sizing: border-box;
   width: 28%;
@@ -520,7 +549,6 @@ a, a:hover, a:link, a:active, a:visited {
   float: left;
   line-height: normal;
   padding: 20px;
-  position: relative;
   width: 100%;
   z-index: 3;
   text-align: left;
@@ -547,12 +575,6 @@ a, a:hover, a:link, a:active, a:visited {
   margin: 15px;
   .transition(all 0.3s ease-in-out);
 }
-
-.project-x-btn:hover img {
-  .transition(all 0.3s ease-in-out);
-  .transform(scale(1.2));
-}
-
 .project-logo {
   width: 128px;
   margin-bottom: 10px;
@@ -574,6 +596,37 @@ a, a:hover, a:link, a:active, a:visited {
   line-height: 1.2;
 }
 
+.project-top-btn, .project-top-btn:link {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.project-top-btn-fixed {
+  position: fixed;
+  bottom: 20px;
+}
+
+.project-top-btn-ab {
+  position: absolute;
+  bottom: 20px;
+}
+
+.project-block-top {
+  width: 86px;
+  float: right;
+  height: 86px;
+}
+
+.project-top-btn:hover, .project-top-btn:active, .project-top-btn:visited {
+  color: #3f3f3f;
+}
+
 .project-title {
   text-align: justify;
 }
@@ -591,13 +644,15 @@ a, a:hover, a:link, a:active, a:visited {
   font-weight: bold;
 }
 
-.project-block span {
+.project-block h4 > span {
   color: #ea094b;
 }
 
 .project-block-no-border {
   border-bottom: none !important;
 }
+
+
 
 /*********
 ***************  作品详情页 end ***************
@@ -660,7 +715,7 @@ a, a:hover, a:link, a:active, a:visited {
 }
 
 .recruit ul > li {
-  border-bottom: 0.1px #3f3f3f solid;
+  border-bottom: 1px #3f3f3f solid;
   position: relative;
   list-style-type: none;
   border-radius: 0;
@@ -717,10 +772,6 @@ a, a:hover, a:link, a:active, a:visited {
 
 .recruit-content > div {
   padding-top: 18px;
-}
-
-.recruit-content > ol {
-  padding-left: 20px;
 }
 
 .recruit-content > ol > li {
@@ -1086,6 +1137,7 @@ a, a:hover, a:link, a:active, a:visited {
   position: relative;
   float: left;
   overflow: hidden;
+  padding-bottom: 3%;
 }
 
 .service-box:before {
@@ -1117,7 +1169,7 @@ a, a:hover, a:link, a:active, a:visited {
 }
 
 .service-name > div {
-  padding-bottom: 13%;
+  // padding-bottom: 13%;
 }
 
 .service-content {
@@ -1336,6 +1388,11 @@ a, a:hover, a:link, a:active, a:visited {
 
   .module-title-container {
     padding-bottom: 50px;
+  }
+
+  .module-content .module-content-s {
+    font-size: 13px;
+    line-height: 22px;
   }
 
   .project-block {
@@ -1643,10 +1700,6 @@ a, a:hover, a:link, a:active, a:visited {
     display: block;
     padding: 42px 20px 20px;
     line-height: 25px;
-  }
-
-  .recruit-content > ol {
-    padding-left: 16px;
   }
 
   .recruit ul > li {

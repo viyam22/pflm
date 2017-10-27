@@ -478,6 +478,7 @@ function initProjectList(e, type) {
         var initI = type === 'init' ? 0 : initProjectNum;
         var targetNum = type === 'init' ? initProjectNum : e.data.length;
 
+        // var projectListDivStr = $("#project-container .row").html();
         var projectListDivStr = '';
         // console.info(!isPc());
         if (browser.ipad || browser.android || browser.iphone) {  //移动端  ipad端
@@ -508,9 +509,19 @@ function initProjectList(e, type) {
                     '</div>'
             }
         }
+        // initIsotope();
+        // $("#project-container .row").html('');
         $("#project-container .row").append(projectListDivStr);
+        // initIsotope();
+        setTimeout(function() {
+            $('.project-con').addClass('projects-con-visit');
+        }, 100);
+
         if (type === 'more') {
-            $('#projectsMore').addClass('hide-page');
+            $('#projectsMore').addClass('hide-more');
+            setTimeout(function() {
+                $('#projectsMore').addClass('hide-page');
+            }, 300)
         }
         initProjectBtn(e, initI, targetNum);
 
@@ -553,6 +564,7 @@ function initProjectBtn(e, initI, targetNum) {
                 if (browser.android || browser.iphone) {  //移动端
                     window.location.href = "project.html#" + _listE.data[i].id;
                 } else { //pc ipad
+
                     curProjectId = _listE.data[i].id;
                     var data = {
                         projectId: _listE.data[i].id
@@ -560,6 +572,14 @@ function initProjectBtn(e, initI, targetNum) {
 
                     // ajaxSend(window.url_projectView, data, window.initProjectPopup);
                     window.initProjectPopup(projectViewData);
+                    isVisitBtn()
+                    var isVisit = 
+                        $('#project-top-btn-box').offset().top - $('#project-popup').offset().top + $('#project-top-btn-box').outerHeight() + 20 <= $(window).height() ? 
+                        true : false;
+                    if (isVisit) {
+                        $('#project-top-btn').addClass('project-top-btn-fixed');
+                        $('#project-top-btn').removeClass('project-top-btn-ab');
+                    }
                 }
             })
         })(i);
@@ -693,3 +713,62 @@ $('.navbar-item').on('click', function() {
         color: '#ea094b'
     })
 })
+
+// 电脑端产品banner缩放
+function initIsotope() {
+    $('#project-container').isotope({
+        layoutMode: 'fitRows',
+        itemSelector: '.project-con'
+    });
+}
+
+// pc端产品页回到顶部按钮控制
+function isVisitBtn() {
+    var isVisit = 
+        $('#project-top-btn-box').offset().top - $('#project-popup').offset().top + $('#project-top-btn-box').outerHeight() + 20 <= $(window).height() ? 
+        true : false;
+    var isBottom = 
+        parseInt($('#project-popup').scrollTop()) + parseInt($(window).height()) + 80 >= parseInt($('#project-popup')[0].scrollHeight) ? 
+        true : false;
+
+    if (isVisit && isBottom) {
+        $('#project-top-btn').addClass('project-top-btn-ab');
+        $('#project-top-btn').removeClass('project-top-btn-fixed');
+    } else if (isVisit && !isBottom) {
+        $('#project-top-btn').addClass('project-top-btn-fixed');
+        $('#project-top-btn').removeClass('project-top-btn-ab');
+    } else {
+        $('#project-top-btn').removeClass('project-top-btn-ab');
+        $('#project-top-btn').removeClass('project-top-btn-fixed');
+        
+    }
+    // if (isVisit) {
+    //     // console.log(true)
+    //     $('#project-top-btn').addClass('project-top-btn-fixed');
+    //     $('#project-top-btn').removeClass('project-top-btn-ab');
+    // } else {
+    //     // console.log(false)
+    //     $('#project-top-btn').removeClass('project-top-btn-fixed');
+    // }
+    // if (isBottom) {
+    //     console.log(true)
+    //     $('#project-top-btn').addClass('project-top-btn-ab');
+    //     $('#project-top-btn').removeClass('project-top-btn-fixed');
+    // } else {
+    //     console.log(false)
+    //     $('#project-top-btn').removeClass('project-top-btn-ab');
+    //     $('#project-top-btn').addClass('project-top-btn-fixed');
+    // }
+
+}
+
+$('#project-popup').on('scroll', function() {
+    isVisitBtn()
+})
+
+$('#project-top-btn').click(function() {
+    $('#project-popup').scrollTop(0)
+})
+ // project-top-btn-fixed
+
+

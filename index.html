@@ -17,16 +17,18 @@
     <!--<script src="js/vconsole.min.js"></script>-->
 
     <!-- 腾讯统计代码 start -->
+    
     <script>
-    var _mtac = {};
-    (function() {
-        var mta = document.createElement("script");
-        mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";
-        mta.setAttribute("name", "MTAH5");
-        mta.setAttribute("sid", "500535726");
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(mta, s);
-    })();
+        var _mtac = {"performanceMonitor":1,"senseQuery":1};
+        (function() {
+            var mta = document.createElement("script");
+            mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.4";
+            mta.setAttribute("name", "MTAH5");
+            mta.setAttribute("sid", "500535726");
+            mta.setAttribute("cid", "500535729");
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(mta, s);
+        })();
     </script>
 
     <!-- 腾讯统计代码 end -->
@@ -131,7 +133,7 @@
         </div>
     </div>
     <div id="project-container" class="project-container container">
-        <div class="row">
+        <div class="row" id="projects-row">
             <!-- <div id='project-con12' class="project-con col-md-3 col-sm-4 col-xs-6">
                  <div class="project-wrapper">
                      <img src="img/projects/project1.jpg"></div>
@@ -194,6 +196,12 @@
                                 MU9600U是海信电视技术的集大成之作，它代表着最先进的电视技术。可以说，海信是电视发展的风向标之一。以“天玑”为名，又代表着电视未来高科技的趋势，因此，我们以“探索电视未来”为传播核心，衍生出一系列未来、星空、宇宙、科技感等元素的传播KV、H5。
                             </h4>
                         </div>
+                    </div>
+                    <!-- 返回顶部按钮 -->
+                    <div class="project-block project-block-no-border project-block-top" id="project-top-btn-box">
+                        <a class="project-top-btn" id="project-top-btn" href="javascript:void(0)">
+                            <span class="glyphicon glyphicon-chevron-up"></span>
+                        </a>
                     </div>
                 </div>
                 <!--中间滚动区域-->
@@ -263,15 +271,17 @@
             <div class="service-selected">
                 <img src="img/service1.png">
                 <div class="service-content">
-                    <div class="service-name module-content">
+                    <div class="service-name module-content-title">
                         <img src="img/service_icon_w1.png">
                         <div>品牌创意</div>
                     </div>
-                    <ul class="module-content-s clearfix">
-                        <li>品牌策略</li>
-                        <li>传播创意制定</li>
-                        <li>互动趋势研究</li>
-                    </ul>
+                    <div class="module-content-box">
+                        <ul class="module-content-s">
+                            <li>品牌策略</li>
+                            <li>传播创意制定</li>
+                            <li>互动趋势研究</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -286,15 +296,17 @@
             <div class="service-selected">
                 <img src="img/service2.png">
                 <div class="service-content">
-                    <div class="service-name module-content">
+                    <div class="service-name module-content-title">
                         <img src="img/service_icon_w2.png">
                         <div>社会化营销</div>
                     </div>
-                    <ul class="module-content-s">
-                        <li>社会化媒体运营维护</li>
-                        <li>社交媒体创意策划执行</li>
-                        <li>产品口碑营销</li>
-                    </ul>
+                    <div class="module-content-box">
+                        <ul class="module-content-s">
+                            <li>社会化媒体运营维护</li>
+                            <li>社交媒体创意策划执行</li>
+                            <li>产品口碑营销</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -309,14 +321,16 @@
             <div class="service-selected">
                 <img src="img/service3.png">
                 <div class="service-content">
-                    <div class="service-name module-content">
+                    <div class="service-name module-content-title">
                         <img src="img/service_icon_w3.png">
                         <div>线下营销</div>
                     </div>
-                    <ul class="module-content-s">
-                        <li>线下创意互动策划执行</li>
-                        <li>品牌活动展览等策划执行</li>
-                    </ul>
+                    <div class="module-content-box">
+                        <ul class="module-content-s">
+                            <li>线下创意互动策划执行</li>
+                            <li>品牌活动展览等策划执行</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -331,15 +345,17 @@
             <div class="service-selected">
                 <img src="img/service4.png">
                 <div class="service-content">
-                    <div class="service-name module-content">
+                    <div class="service-name module-content-title">
                         <img src="img/service_icon_w4.png">
                         <div>媒介合作</div>
                     </div>
-                    <ul class="module-content-s">
-                        <li>媒介谈判采购</li>
-                        <li>微信微博KOL资源</li>
-                        <li>投放监测汇报</li>
-                    </ul>
+                    <div class="module-content-box">
+                        <ul class="module-content-s">
+                            <li>媒介谈判采购</li>
+                            <li>微信微博KOL资源</li>
+                            <li>投放监测汇报</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -354,15 +370,17 @@
             <div class="service-selected">
                 <img src="img/service5.png">
                 <div class="service-content">
-                    <div class="service-name module-content">
+                    <div class="service-name module-content-title">
                         <img src="img/service_icon_w5.png">
                         <div>数字互动</div>
                     </div>
-                    <ul class="module-content-s">
-                        <li>微博微信应用设计开发</li>
-                        <li>创意H5策划制作</li>
-                        <li>Minisite创作搭建运营</li>
-                    </ul>
+                    <div class="module-content-box">
+                        <ul class="module-content-s">
+                            <li>微博微信应用设计开发</li>
+                            <li>创意H5策划制作</li>
+                            <li>Minisite创作搭建运营</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -377,15 +395,17 @@
             <div class="service-selected">
                 <img src="img/service6.png">
                 <div class="service-content">
-                    <div class="service-name module-content">
+                    <div class="service-name module-content-title">
                         <img src="img/service_icon_w6.png">
                         <div>IP创意</div>
                     </div>
-                    <ul class="module-content-s">
-                        <li>品牌IP体系共建</li>
-                        <li>IP跨界合作运营</li>
-                        <li>IP互动创意营销</li>
-                    </ul>
+                    <div class="module-content-box">
+                        <ul class="module-content-s">
+                            <li>品牌IP体系共建</li>
+                            <li>IP跨界合作运营</li>
+                            <li>IP互动创意营销</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -640,12 +660,15 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/jquery.nav.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></scriptpopup-inner-wrap<script src="js/smoothscroll.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
 <!--<script src="js/asyAjax.js"></script>-->
 <script src="js/main.js"></script>
 <script src="js/index.js"></script>
 
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript" src="http://s-api.pflm.cn/sys/js.share?gh=gh_cf3603d36721"></script>
 <script>
     var shareDatas = {
         imgUrl     : 'http://creative.pflm.cn/img/share_img.jpg',
@@ -695,7 +718,6 @@
                         dataUrl: '',
                         success: function(res) {
                          // console.info("转发好友 OK!");
-                            ELEID.$popup.animate({ top: '-200%' }, 'slow')
                             MtaH5.clickStat("sharetofri")
                         },
                         cancel: function() {}
@@ -708,7 +730,6 @@
                         imgUrl: imgUrl,
                         success: function() {
                          // console.info("转发朋友圈 OK!");
-                            ELEID.$popup.animate({ top: '-200%' }, 'slow')
                             MtaH5.clickStat("sharetomoments")
                         },
                         cancel: function() {}
@@ -735,7 +756,6 @@
     }
 
 </script>
-<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
-<script type="text/javascript" src="http://s-api.pflm.cn/sys/js.share?gh=gh_cf3603d36721"></script>
+
 </body>
 </html>

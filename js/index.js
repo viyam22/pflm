@@ -31,7 +31,7 @@ var recruitData={
         ],
         "requirement": [
             "有扎实的美术功底，对设计发自真心的热爱，不将就，追求完美和提高；",
-            "熟练操作PS、AI、Coreldraw等，会ID和AE更佳；",
+            "熟练操作PS、AI、Coreldraw等，会C4D和AE更佳；",
             "有独特的思维和创意，对新锐事物有敏锐的观察力，对设计流行趋势有把握能力，对色彩有良好的感受，有审美和艺术领悟力；",
             "有良好的工作态度和责任心，做事有始有终，按时按质完成上级安排的工作；",
             "善于沟通合作，我们是一个协作的团队，每一个人都是团队重要的一部分，大家共同创作完美的设计作品；",
@@ -115,6 +115,7 @@ $(document).ready(function () {
     resizeWindow()
     initRecruit(recruitData)
     menuScoll()
+    // initIsotope()
 });
 
 function resizeWindow() {

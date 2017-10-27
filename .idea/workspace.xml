@@ -2,6 +2,93 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63b8e8b5-f844-47d2-8ed4-83e56b27d96c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/footer_code.png" afterPath="$PROJECT_DIR$/img/footer_code.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/jumbotron_gif_2.gif" afterPath="$PROJECT_DIR$/img/jumbotron_gif_2.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project10_1.gif" afterPath="$PROJECT_DIR$/img/projects/project10_1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project10_2.gif" afterPath="$PROJECT_DIR$/img/projects/project10_2.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project10_3.gif" afterPath="$PROJECT_DIR$/img/projects/project10_3.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project10_b.png" afterPath="$PROJECT_DIR$/img/projects/project10_b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project11_1.jpg" afterPath="$PROJECT_DIR$/img/projects/project11_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project11_2.jpg" afterPath="$PROJECT_DIR$/img/projects/project11_2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project11_3.jpg" afterPath="$PROJECT_DIR$/img/projects/project11_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project11_4.jpg" afterPath="$PROJECT_DIR$/img/projects/project11_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project11_5.jpg" afterPath="$PROJECT_DIR$/img/projects/project11_5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project11_6.jpg" afterPath="$PROJECT_DIR$/img/projects/project11_6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project11_b.jpg" afterPath="$PROJECT_DIR$/img/projects/project11_b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project12_1.jpg" afterPath="$PROJECT_DIR$/img/projects/project12_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project12_11.jpg" afterPath="$PROJECT_DIR$/img/projects/project12_11.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project12_3.jpg" afterPath="$PROJECT_DIR$/img/projects/project12_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project12_7.jpg" afterPath="$PROJECT_DIR$/img/projects/project12_7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project12_9.jpg" afterPath="$PROJECT_DIR$/img/projects/project12_9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project13_2.jpg" afterPath="$PROJECT_DIR$/img/projects/project13_2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project13_3.jpg" afterPath="$PROJECT_DIR$/img/projects/project13_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project13_4.jpg" afterPath="$PROJECT_DIR$/img/projects/project13_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project13_5.jpg" afterPath="$PROJECT_DIR$/img/projects/project13_5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project13_6.jpg" afterPath="$PROJECT_DIR$/img/projects/project13_6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project13_7.jpg" afterPath="$PROJECT_DIR$/img/projects/project13_7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project13_b.jpg" afterPath="$PROJECT_DIR$/img/projects/project13_b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project14_1.jpg" afterPath="$PROJECT_DIR$/img/projects/project14_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project15_1.jpg" afterPath="$PROJECT_DIR$/img/projects/project15_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project15_2.jpg" afterPath="$PROJECT_DIR$/img/projects/project15_2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project15_3.jpg" afterPath="$PROJECT_DIR$/img/projects/project15_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project15_4.jpg" afterPath="$PROJECT_DIR$/img/projects/project15_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project15_5.jpg" afterPath="$PROJECT_DIR$/img/projects/project15_5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project15_6.jpg" afterPath="$PROJECT_DIR$/img/projects/project15_6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project16_1.jpg" afterPath="$PROJECT_DIR$/img/projects/project16_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project16_2.jpg" afterPath="$PROJECT_DIR$/img/projects/project16_2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project16_3.jpg" afterPath="$PROJECT_DIR$/img/projects/project16_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project16_4.jpg" afterPath="$PROJECT_DIR$/img/projects/project16_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project16_5.jpg" afterPath="$PROJECT_DIR$/img/projects/project16_5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project16_6.jpg" afterPath="$PROJECT_DIR$/img/projects/project16_6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project16_7.jpg" afterPath="$PROJECT_DIR$/img/projects/project16_7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project1_1.jpg" afterPath="$PROJECT_DIR$/img/projects/project1_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project1_10.gif" afterPath="$PROJECT_DIR$/img/projects/project1_10.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project1_2.jpg" afterPath="$PROJECT_DIR$/img/projects/project1_2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project1_3.jpg" afterPath="$PROJECT_DIR$/img/projects/project1_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project1_4.jpg" afterPath="$PROJECT_DIR$/img/projects/project1_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project1_5.jpg" afterPath="$PROJECT_DIR$/img/projects/project1_5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project1_6.gif" afterPath="$PROJECT_DIR$/img/projects/project1_6.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project1_7.gif" afterPath="$PROJECT_DIR$/img/projects/project1_7.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project1_8.gif" afterPath="$PROJECT_DIR$/img/projects/project1_8.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project1_9.gif" afterPath="$PROJECT_DIR$/img/projects/project1_9.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project2_1.jpg" afterPath="$PROJECT_DIR$/img/projects/project2_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project2_2.jpg" afterPath="$PROJECT_DIR$/img/projects/project2_2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project2_3.jpg" afterPath="$PROJECT_DIR$/img/projects/project2_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project3_b.png" afterPath="$PROJECT_DIR$/img/projects/project3_b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project4_1.jpg" afterPath="$PROJECT_DIR$/img/projects/project4_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project4_2.jpg" afterPath="$PROJECT_DIR$/img/projects/project4_2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project4_3.jpg" afterPath="$PROJECT_DIR$/img/projects/project4_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project4_7.jpg" afterPath="$PROJECT_DIR$/img/projects/project4_7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project4_b.jpg" afterPath="$PROJECT_DIR$/img/projects/project4_b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project6_1.gif" afterPath="$PROJECT_DIR$/img/projects/project6_1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project6_2.gif" afterPath="$PROJECT_DIR$/img/projects/project6_2.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project6_3.gif" afterPath="$PROJECT_DIR$/img/projects/project6_3.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project6_4.gif" afterPath="$PROJECT_DIR$/img/projects/project6_4.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project7_1.jpg" afterPath="$PROJECT_DIR$/img/projects/project7_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project7_10.jpg" afterPath="$PROJECT_DIR$/img/projects/project7_10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project7_11.jpg" afterPath="$PROJECT_DIR$/img/projects/project7_11.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project7_2.jpg" afterPath="$PROJECT_DIR$/img/projects/project7_2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project7_3.jpg" afterPath="$PROJECT_DIR$/img/projects/project7_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project7_4.jpg" afterPath="$PROJECT_DIR$/img/projects/project7_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project7_5.jpg" afterPath="$PROJECT_DIR$/img/projects/project7_5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project7_6.jpg" afterPath="$PROJECT_DIR$/img/projects/project7_6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project7_7.jpg" afterPath="$PROJECT_DIR$/img/projects/project7_7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project7_8.jpg" afterPath="$PROJECT_DIR$/img/projects/project7_8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project7_9.jpg" afterPath="$PROJECT_DIR$/img/projects/project7_9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project8_1.gif" afterPath="$PROJECT_DIR$/img/projects/project8_1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project8_2.gif" afterPath="$PROJECT_DIR$/img/projects/project8_2.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project8_3.gif" afterPath="$PROJECT_DIR$/img/projects/project8_3.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project8_4.gif" afterPath="$PROJECT_DIR$/img/projects/project8_4.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project8_5.png" afterPath="$PROJECT_DIR$/img/projects/project8_5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project8_6.png" afterPath="$PROJECT_DIR$/img/projects/project8_6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project9_1.jpg" afterPath="$PROJECT_DIR$/img/projects/project9_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project9_2.jpg" afterPath="$PROJECT_DIR$/img/projects/project9_2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project9_3.jpg" afterPath="$PROJECT_DIR$/img/projects/project9_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project9_4.jpg" afterPath="$PROJECT_DIR$/img/projects/project9_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project9_5.jpg" afterPath="$PROJECT_DIR$/img/projects/project9_5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project9_6.jpg" afterPath="$PROJECT_DIR$/img/projects/project9_6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/project9_7.jpg" afterPath="$PROJECT_DIR$/img/projects/project9_7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.less" afterPath="$PROJECT_DIR$/css/main.less" />
@@ -34,8 +121,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+            <state relative-caret-position="1178">
+              <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -44,8 +131,8 @@
       <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="42" column="3" lean-forward="false" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+            <state relative-caret-position="893">
+              <caret line="47" column="3" lean-forward="false" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -101,6 +188,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -129,8 +218,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,11 +261,15 @@
       <workItem from="1507814475133" duration="21000" />
       <workItem from="1508125466934" duration="4000" />
       <workItem from="1508149320783" duration="3000" />
+      <workItem from="1508322433948" duration="1179000" />
+      <workItem from="1508743205900" duration="15000" />
+      <workItem from="1508817155058" duration="1197000" />
+      <workItem from="1509076168657" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2545000" />
+    <option name="totallyTimeSpent" value="5533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1936" height="1066" extended-state="0" />
@@ -220,6 +311,102 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="47" column="3" lean-forward="false" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="3" lean-forward="false" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="3" lean-forward="false" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="3" lean-forward="false" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -294,16 +481,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        <state relative-caret-position="1178">
+          <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="3" lean-forward="false" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+        <state relative-caret-position="893">
+          <caret line="47" column="3" lean-forward="false" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
           <folding />
         </state>
       </provider>
